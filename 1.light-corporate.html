@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perusahaan Lorem Ipsum</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Lenis Smooth -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.6/bundled/lenis.min.js"></script>
+
+  <style>
+    body {
+      background: #f9fafb;
+    }
+
+    /* SECTION ANIMATION */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease;
+    }
+
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* TEXT ANIMATION (PREMIUM) */
+    .reveal-text {
+      opacity: 0;
+      transform: translateY(40px);
+      filter: blur(6px);
+      transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal-text.show {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  </style>
+</head>
+
+<body class="text-gray-800 pt-20">
+
+<!-- Navbar -->
+<header id="navbar" class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-md border-b transition-all duration-300 py-4">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6">
+    <h1 class="text-xl font-bold text-blue-700">CORPorate</h1>
+
+    <nav class="space-x-6 hidden md:flex font-medium">
+      <a href="#" class="hover:text-blue-700">Home</a>
+      <a href="#about" class="hover:text-blue-700">About</a>
+      <a href="#services" class="hover:text-blue-700">Services</a>
+      <a href="#portfolio" class="hover:text-blue-700">Portfolio</a>
+      <a href="#contact" class="hover:text-blue-700">Contact</a>
+    </nav>
+
+    <a href="#contact" class="bg-blue-700 text-white px-5 py-2 rounded-full transition hover:scale-110 hover:shadow-xl hidden md:block">
+      Get Started
+    </a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-12 text-center fade-up">
+
+  <h2 class="text-5xl font-bold mb-6 reveal-text" style="transition-delay:0.1s">
+    Professional Corporate Website
+  </h2>
+
+  <p class="text-lg mb-6 reveal-text" style="transition-delay:0.3s">
+    Solusi digital modern untuk bisnis Anda dengan performa terbaik.
+  </p>
+
+  <button class="bg-white text-blue-800 px-6 py-3 rounded-full font-semibold transition hover:scale-110 hover:shadow-xl reveal-text" style="transition-delay:0.5s">
+    Learn More
+  </button>
+
+</section>
+
+<!-- Stats -->
+<section class="py-16 bg-white fade-up">
+  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+    <div class="reveal-text"><h3 class="text-3xl font-bold">100+</h3><p>Clients</p></div>
+    <div class="reveal-text"><h3 class="text-3xl font-bold">250+</h3><p>Projects</p></div>
+    <div class="reveal-text"><h3 class="text-3xl font-bold">10+</h3><p>Years</p></div>
+    <div class="reveal-text"><h3 class="text-3xl font-bold">24/7</h3><p>Support</p></div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="max-w-6xl mx-auto py-20 px-6 fade-up">
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-3xl font-bold mb-4 text-blue-700 reveal-text">About Company</h2>
+      <p class="reveal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="reveal-text">
+      <img src="https://picsum.photos/500/300" class="rounded-xl shadow-lg">
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="bg-gray-100 py-20 fade-up">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-blue-700 reveal-text">
+      Our Services
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow transition hover:-translate-y-3 hover:shadow-2xl reveal-text">
+        <i data-feather="code"></i>
+        <h3 class="font-bold mt-3">Web Development</h3>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow transition hover:-translate-y-3 hover:shadow-2xl reveal-text">
+        <i data-feather="smartphone"></i>
+        <h3 class="font-bold mt-3">App Development</h3>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow transition hover:-translate-y-3 hover:shadow-2xl reveal-text">
+        <i data-feather="trending-up"></i>
+        <h3 class="font-bold mt-3">Digital Marketing</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="py-20 fade-up">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-blue-700 reveal-text">
+      Portfolio
+    </h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <img src="https://picsum.photos/400/300?1" class="rounded-xl shadow reveal-text">
+      <img src="https://picsum.photos/400/300?2" class="rounded-xl shadow reveal-text">
+      <img src="https://picsum.photos/400/300?3" class="rounded-xl shadow reveal-text">
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-blue-900 text-white py-20 text-center fade-up">
+  <h2 class="text-3xl font-bold mb-6 reveal-text">Contact Us</h2>
+  <p class="reveal-text">Email: info@loremipsum.com</p>
+  <p class="reveal-text">Phone: +62 123 4567 890</p>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-white text-center py-6">
+  <p>&copy; Designed by cici.web</p>
+</footer>
+
+<script>
+// LENIS SMOOTH
+const lenis = new Lenis({
+  duration: 1.4,
+  easing: (t) => 1 - Math.pow(1 - t, 4),
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+// NAV CLICK
+document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+
+    lenis.scrollTo(target, {
+      offset: -80,
+      duration: 1.6
+    });
+  });
+});
+
+// NAVBAR EFFECT
+const navbar = document.getElementById("navbar");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add("py-2","shadow-lg");
+    navbar.classList.remove("py-4");
+  } else {
+    navbar.classList.add("py-4");
+    navbar.classList.remove("py-2","shadow-lg");
+  }
+});
+
+// SECTION ANIMATION
+const sections = document.querySelectorAll(".fade-up");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add("show");
+  });
+});
+sections.forEach(el => observer.observe(el));
+
+// TEXT ANIMATION
+const texts = document.querySelectorAll(".reveal-text");
+const textObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add("show");
+  });
+}, { threshold: 0.2 });
+texts.forEach(el => textObserver.observe(el));
+
+// ICON
+feather.replace();
+</script>
+
+</body>
+</html>

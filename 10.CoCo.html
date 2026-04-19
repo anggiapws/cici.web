@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Non Linear Creative Company</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+  }
+
+  body {
+    background: #f9fafb;
+    color: #0f172a;
+  }
+
+  .sidebar {
+    background: white;
+    border-right: 1px solid #e5e7eb;
+    height: 100vh;
+    position: fixed;
+    width: 240px;
+    top: 0;
+    left: 0;
+  }
+
+  .main {
+    margin-left: 240px;
+  }
+
+  section {
+    scroll-margin-top: 80px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .card:hover {
+    transform: translateY(-10px) rotate(-1deg);
+  }
+
+  .btn {
+    background: #111827;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 999px;
+    transition: 0.3s ease;
+    display: inline-block;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .floating {
+    animation: float 5s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* smooth hover link */
+  .sidebar a {
+    transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+    padding-left: 6px;
+    color: #000;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar p-6">
+  <h1 class="font-bold text-xl mb-10">CoCo</h1>
+
+  <nav class="space-y-4 text-gray-600">
+    <a href="#home" class="block">Home</a>
+    <a href="#work" class="block">Work</a>
+    <a href="#services" class="block">Services</a>
+    <a href="#contact" class="block">Contact</a>
+  </nav>
+
+  <div class="absolute bottom-6 text-xs text-gray-400">
+    © 2026 Designed by cici.web
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- HERO -->
+  <section id="home" class="grid md:grid-cols-2 min-h-screen items-center px-10">
+
+    <div data-aos="fade-right">
+      <h1 class="text-5xl font-bold mb-6">
+        Build <br> Something <span class="underline">Different</span>
+      </h1>
+
+      <p class="text-gray-600 mb-6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, architecto.
+      </p>
+
+      <button class="btn">Start Project</button>
+    </div>
+
+    <div class="relative">
+      <div class="card p-4 floating">
+        <img src="https://picsum.photos/500/500" class="rounded-xl"/>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="px-10 py-20">
+
+    <h2 class="text-3xl font-bold mb-10">Services</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="card p-6 floating" data-aos="zoom-in">
+        Design
+      </div>
+
+      <div class="card p-6 floating" data-aos="zoom-in" data-aos-delay="100">
+        Development
+      </div>
+
+      <div class="card p-6 floating" data-aos="zoom-in" data-aos-delay="200">
+        Branding
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DIAGONAL -->
+  <section class="bg-black text-white transform skew-y-[-3deg] py-20">
+    <div class="max-w-5xl mx-auto px-10 transform skew-y-[3deg]">
+
+      <h2 class="text-4xl font-bold mb-6">We Think Different</h2>
+
+      <p class="text-gray-300">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nulla.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="px-10 py-20">
+
+    <h2 class="text-3xl font-bold mb-10">Selected Work</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <img src="https://picsum.photos/400/500" class="card"/>
+      <img src="https://picsum.photos/401/500" class="card"/>
+      <img src="https://picsum.photos/402/500" class="card"/>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="px-10 py-20">
+
+    <div class="card p-10 text-center" data-aos="fade-up">
+
+      <h2 class="text-3xl font-bold mb-4">Let’s Work Together</h2>
+
+      <p class="text-gray-600 mb-6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+
+      <a href="https://wa.me/628120000000" class="btn">
+        Contact WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+</div>
+
+<footer class="text-center py-8 md:py-10 text-gray-500 text-sm">
+  <p>&copy; 2026 Designed by cici.web</p>
+</footer>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 1200, once: true, easing: "ease-out" });
+</script>
+
+</body>
+</html>

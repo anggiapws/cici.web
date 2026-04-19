@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NextGen Luxury Premium</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(34,211,238,0.08), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(168,85,247,0.08), transparent 35%),
+    #05070d;
+  color:#e5e7eb;
+  overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+  backdrop-filter: blur(24px);
+  background: rgba(0,0,0,0.35);
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+/* TYPOGRAPHY LUXURY */
+h1,h2,h3{
+  letter-spacing:-0.5px;
+}
+
+.gradient-text{
+  background: linear-gradient(90deg,#22d3ee,#60a5fa,#a78bfa);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+/* CARD PREMIUM */
+.card{
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(16px);
+  border-radius: 22px;
+  transition: .4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(120deg, transparent, rgba(34,211,238,0.08), transparent);
+  transform: translateX(-100%);
+  transition:.6s;
+}
+
+.card:hover::before{
+  transform: translateX(100%);
+}
+
+.card:hover{
+  transform: translateY(-12px);
+  border-color: rgba(34,211,238,0.5);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+}
+
+/* BUTTON PREMIUM */
+.btn{
+  background: linear-gradient(90deg,#22d3ee,#60a5fa);
+  padding: 14px 34px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: .3s;
+  display:inline-block;
+}
+
+.btn:hover{
+  transform: scale(1.06);
+  box-shadow: 0 15px 40px rgba(34,211,238,0.25);
+}
+
+/* HERO DEPTH */
+.hero-glow{
+  position:absolute;
+  width:500px;
+  height:500px;
+  background: radial-gradient(circle, rgba(34,211,238,0.15), transparent 60%);
+  filter: blur(40px);
+  top:-100px;
+  left:-100px;
+  z-index:-1;
+}
+
+/* SECTION SPACING SYSTEM */
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:120px 20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<header class="fixed w-full z-50">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <h1 class="font-bold tracking-widest">NEXTGEN</h1>
+    <div class="hidden md:flex gap-8 text-sm text-gray-300">
+      <a href="#">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="h-screen flex items-center justify-center text-center px-6 relative">
+
+  <div class="hero-glow"></div>
+
+  <div data-aos="fade-up">
+
+    <h1 class="text-6xl md:text-7xl font-light mb-6">
+      Build <span class="gradient-text">Elite</span><br>
+      Digital Experience
+    </h1>
+
+    <p class="max-w-xl mx-auto text-gray-400 mb-10">
+      Premium-grade website template designed for high-end brands, SaaS, and modern agencies that demand luxury UI.
+    </p>
+
+    <a class="btn" href="#contact">Start Your Project</a>
+
+  </div>
+
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section">
+
+  <h2 class="text-center text-3xl gradient-text mb-14">Core Features</h2>
+
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <div class="card p-7" data-aos="zoom-in">
+      <i data-feather="cpu"></i>
+      <h3 class="mt-4 font-semibold">AI Driven System</h3>
+      <p class="text-gray-400 text-sm mt-2">Smart automation for modern business flow.</p>
+    </div>
+
+    <div class="card p-7" data-aos="zoom-in" data-aos-delay="100">
+      <i data-feather="cloud"></i>
+      <h3 class="mt-4 font-semibold">Cloud Architecture</h3>
+      <p class="text-gray-400 text-sm mt-2">Scalable infrastructure for global growth.</p>
+    </div>
+
+    <div class="card p-7" data-aos="zoom-in" data-aos-delay="200">
+      <i data-feather="shield"></i>
+      <h3 class="mt-4 font-semibold">Enterprise Security</h3>
+      <p class="text-gray-400 text-sm mt-2">Bank-grade security & protection system.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section grid md:grid-cols-2 gap-12 items-center">
+
+  <div data-aos="fade-right">
+    <h2 class="text-3xl gradient-text mb-5">About The Product</h2>
+    <p class="text-gray-400 leading-relaxed">
+      This template is crafted for premium brands that want to elevate digital presence with modern aesthetics, smooth interaction, and conversion-focused structure.
+    </p>
+  </div>
+
+  <div class="card p-4" data-aos="fade-left">
+    <img src="https://picsum.photos/700/500" class="rounded-xl">
+  </div>
+
+</section>
+
+<!-- WORK -->
+<section id="work" class="section">
+
+  <h2 class="text-center text-3xl gradient-text mb-12">Selected Work</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <img src="https://picsum.photos/400/300?1" class="rounded-xl card">
+    <img src="https://picsum.photos/400/300?2" class="rounded-xl card">
+    <img src="https://picsum.photos/400/300?3" class="rounded-xl card">
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section id="contact" class="section text-center">
+
+  <h2 class="text-4xl gradient-text mb-6">Let’s Build Something Exceptional</h2>
+
+  <p class="text-gray-400 mb-8">
+    High-end digital product starts from a strong design foundation.
+  </p>
+
+  <a class="btn" href="#">Contact Now</a>
+
+</section>
+
+<footer class="text-center py-10 text-gray-500 text-sm">
+  <p>&copy; 2026 NextGen Luxury Studio</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 900, once: true });
+feather.replace();
+</script>
+
+</body>
+</html>

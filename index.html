@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cici.web - Premium Website Service</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family: ui-sans-serif;
+  background:#f8fafc;
+}
+
+/* BUTTON */
+.btn{
+  background: linear-gradient(to right,#2563eb,#60a5fa);
+  color:white;
+  padding:12px 24px;
+  border-radius:999px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+  box-shadow:0 10px 30px rgba(37,99,235,0.3);
+}
+
+/* CARD */
+.card{
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+/* GLASS NAV */
+.nav-glass{
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* WA FLOAT */
+.wa-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:14px 16px;
+  border-radius:999px;
+  font-size:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+</style>
+
+</head>
+
+<body class="text-gray-700">
+
+<!-- NAVBAR -->
+<header class="fixed top-0 w-full z-50 nav-glass border-b">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+  <h1 class="text-lg font-semibold tracking-[0.35em] relative">
+    <span class="bg-gradient-to-r from-sky-300 via-blue-500 to-blue-900 bg-clip-text text-transparent font-semibold tracking-widest">
+      CICI.WEB
+    </span>
+  </h1>
+
+    <nav class="hidden md:flex space-x-8 text-sm">
+      <a href="#home">Home</a>
+      <a href="#packages">Packages</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn text-sm">Order</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="relative pt-40 pb-24 overflow-hidden">
+
+  <!-- background glow -->
+  <div class="absolute inset-0">
+    <div class="absolute w-[500px] h-[500px] bg-blue-400/10 blur-3xl rounded-full top-[-100px] left-[-100px]"></div>
+    <div class="absolute w-[500px] h-[500px] bg-purple-400/10 blur-3xl rounded-full bottom-[-150px] right-[-100px]"></div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+
+    <!-- TEXT -->
+    <div class="space-y-6">
+
+      <span class="inline-block text-sm bg-blue-100 text-blue-600 px-4 py-1 rounded-full w-fit">
+        Premium Website Service
+      </span>
+
+      <h1 class="text-5xl md:text-6xl font-bold leading-tight text-gray-800">
+        Build Your <span class="text-blue-600">Luxury Website</span><br>
+        That Sells Faster
+      </h1>
+
+      <p class="text-gray-500 max-w-md">
+        Clean, modern, and high-conversion websites for business, portfolio, startup, and personal brand.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <a href="#portfolio" class="border border-gray-300 px-6 py-3 rounded-full hover:bg-gray-100 transition">
+          See Portfolio
+        </a>
+      </div>
+
+      <!-- mini stats -->
+      <div class="flex gap-6 pt-4 text-sm text-gray-500">
+        <div>
+          <p class="text-xl font-bold text-gray-800">50+</p>
+          Templates
+        </div>
+        <div>
+          <p class="text-xl font-bold text-gray-800">4.9★</p>
+          Rating
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PREVIEW SLIDER -->
+    <div class="relative overflow-hidden rounded-3xl shadow-2xl border border-gray-100">
+
+      <!-- slider track -->
+      <div id="sliderTrack" class="flex transition-transform duration-700 ease-in-out">
+
+        <iframe src="4.Studio.html" class="w-full h-[400px] flex-shrink-0 border"></iframe>
+        <iframe src="8.EditorialCo.html" class="w-full h-[400px] flex-shrink-0 border"></iframe>
+        <iframe src="5.SoftAgency.html" class="w-full h-[400px] flex-shrink-0 border"></iframe>
+        <iframe src="6.Green.html" class="w-full h-[400px] flex-shrink-0 border"></iframe>
+        <iframe src="9.Luxury.html" class="w-full h-[400px] flex-shrink-0 border"></iframe>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages" class="px-6 py-24 text-center bg-gray-50">
+
+  <h2 class="text-4xl font-bold mb-3 tracking-tight text-gray-900">
+    Choose Your Package
+  </h2>
+
+    <p class="text-gray-600 text-sm leading-relaxed p-4">
+      Pricing does not include hosting and domain. Clients can purchase their own hosting and domain independently. <br>
+      We also provide deployment assistance to ensure your website goes live smoothly and professionally.
+    </p>
+<div class="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto p-4">
+
+  <!-- CARD -->
+  <div class="relative bg-white p-7 rounded-2xl shadow-lg border flex flex-col justify-between h-full hover:-translate-y-2 transition">
+
+    <!-- FLOATING BADGE (tidak ikut isi box) -->
+    <div class="absolute -top-3 left-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-lg tracking-widest">
+      MOST POPULAR
+    </div>
+
+    <div>
+      <h3 class="font-semibold text-lg mb-2 text-gray-900">
+        Frontend Template
+      </h3>
+
+      <p class="text-sm text-gray-500 mb-4">
+        Ready-made website template.
+      </p>
+
+      <p class="text-2xl font-bold text-blue-600 mb-4">
+        $15 - $45
+      </p>
+
+      <ul class="text-sm text-gray-600 space-y-2">
+        <li>✔ Premium ready design</li>
+        <li>✔ Fast delivery (1–2 days)</li>
+        <li>✔ Basic support</li>
+      </ul>
+    </div>
+
+    <a href="#contact"
+      class="mt-6 block bg-gradient-to-r from-blue-500 to-blue-700 text-white py-2 rounded-xl font-medium text-center hover:from-blue-600 hover:to-blue-800 transition">
+      Order Now
+    </a>
+
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="bg-white p-7 rounded-2xl shadow-lg border flex flex-col justify-between h-full hover:-translate-y-2 transition">
+
+    <div>
+      <h3 class="font-semibold text-lg mb-2 text-gray-900">Frontend Custom</h3>
+
+      <p class="text-sm text-gray-500 mb-4">Custom UI design.</p>
+
+      <p class="text-2xl font-bold text-blue-600 mb-4">$49 - $99</p>
+
+      <ul class="text-sm text-gray-600 space-y-2">
+        <li>✔ Custom UI</li>
+        <li>✔ Responsive</li>
+        <li>✔ Clean design</li>
+        <li>✔ Better layout structure</li>
+      </ul>
+    </div>
+
+    <a href="#contact"
+       class="mt-6 block bg-gradient-to-r from-blue-500 to-blue-700 text-white py-2 rounded-xl text-center font-medium hover:from-blue-600 hover:to-blue-800 transition">
+      Order Now
+    </a>
+
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="bg-white p-7 rounded-2xl shadow-lg border flex flex-col justify-between h-full hover:-translate-y-2 transition">
+
+    <div>
+      <h3 class="font-semibold text-lg mb-2 text-gray-900">Full Website</h3>
+
+      <p class="text-sm text-gray-500 mb-4">Frontend + Backend.</p>
+
+      <p class="text-2xl font-bold text-blue-600 mb-4">$99 - $199</p>
+
+      <ul class="text-sm text-gray-600 space-y-2">
+        <li>✔ Database system</li>
+        <li>✔ Login system</li>
+        <li>✔ Admin panel</li>
+        <li>✔ Deployment help</li>
+      </ul>
+    </div>
+
+    <a href="#contact"
+       class="mt-6 block bg-gradient-to-r from-blue-500 to-blue-700 text-white py-2 rounded-xl text-center font-medium hover:from-blue-600 hover:to-blue-800 transition">
+      Order Now
+    </a>
+
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="bg-white p-7 rounded-2xl shadow-lg border flex flex-col justify-between h-full hover:-translate-y-2 transition">
+
+    <div>
+      <h3 class="font-semibold text-lg mb-2 text-gray-900">Custom Web App</h3>
+
+      <p class="text-sm text-gray-500 mb-4">Advanced system.</p>
+
+      <p class="text-2xl font-bold text-blue-600 mb-4">$199 - $500+</p>
+
+      <ul class="text-sm text-gray-600 space-y-2">
+        <li>✔ Complex system</li>
+        <li>✔ API integration</li>
+        <li>✔ Scalable architecture</li>
+        <li>✔ Priority support</li>
+      </ul>
+    </div>
+
+    <a href="#contact"
+       class="mt-6 block bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-2 rounded-xl text-center font-medium hover:from-blue-700 hover:to-indigo-800 transition">
+      Order Now
+    </a>
+
+  </div>
+
+</div>
+</section>
+
+<!-- LIGHT -->
+<section id="portfolio" class="px-6 py-20">
+
+  <h2 class="text-3xl font-bold text-center mb-12">Template Preview LIGHT</h2>
+
+  <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+<!-- CARD 1 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+        <!-- Preview -->
+        <iframe src="1.light-corporate.html"
+            class="w-full h-[280px] border-none">
+        </iframe>
+
+        <!-- Content -->
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                Light Corporate Template
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Clean and modern corporate website design, suitable for business and portfolio.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $15
+            </p>
+
+            <a href="1.light-corporate.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+
+<!-- CARD 2 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+        <!-- Preview -->
+        <iframe src="2.CreativeCo.html"
+            class="w-full h-[280px] border-none"
+            loading="lazy">
+        </iframe>
+
+        <!-- Content -->
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                CreativeCo Template
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Creative and modern glassmorphism design with smooth animations, perfect for agencies.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $20
+            </p>
+
+            <a href="2.CreativeCo.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+
+<!-- CARD 3 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+        <!-- Preview -->
+        <iframe src="3.Elegance.html"
+            class="w-full h-[280px] border-none"
+            loading="lazy">
+        </iframe>
+
+        <!-- Content -->
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                Elegance Template
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Elegant minimalist design with clean layout, perfect black & white aesthetic for premium branding.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $20
+            </p>
+
+            <a href="3.Elegance.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+
+
+<!-- CARD 4 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+        <!-- Preview -->
+        <iframe src="4.Studio.html"
+            class="w-full h-[280px] border-none"
+            loading="lazy">
+        </iframe>
+
+        <!-- Content -->
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                Studio Template
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Modern studio-style layout with clean spacing and professional presentation, ideal for creative portfolios.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $25
+            </p>
+
+            <a href="4.Studio.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+
+<!-- CARD 5 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+        <iframe src="5.SoftAgency.html"
+            class="w-full h-[280px] border-none"
+            loading="lazy">
+        </iframe>
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                Soft Elegant Agency
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Soft modern agency design with elegant gradient style, smooth animations, and clean professional layout.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $30
+            </p>
+
+            <a href="5.SoftAgency.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+
+<!-- CARD 6 -->
+<div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+    <iframe src="6.Green.html"
+        class="w-full h-[280px] border-none"
+        loading="lazy">
+    </iframe>
+
+    <div class="p-4">
+
+        <h3 class="font-semibold text-gray-800">
+            Green Luxury Studio
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-1">
+            Modern green luxury studio template with calm natural tones, elegant layout, and smooth responsive design.
+        </p>
+
+        <p class="text-blue-600 font-bold mt-2">
+            Starting from $30
+        </p>
+
+        <a href="6.Green.html" target="_blank"
+            class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+            View Website
+        </a>
+
+    </div>
+</div>
+
+<!-- CARD 7 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+        <!-- Preview -->
+        <iframe src="7.AngledCo.html"
+            class="w-full h-[280px] border-none"
+            loading="lazy">
+        </iframe>
+
+        <!-- Content -->
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                Angled Co Template
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Creative angled layout with modern typography, smooth sections, and bold visual structure.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $15
+            </p>
+
+            <a href="7.AngledCo.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+<!-- CARD  8 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+        <iframe src="8.EditorialCo.html"
+            class="w-full h-[280px] border-none"
+            loading="lazy">
+        </iframe>
+
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                EditorialCo Studio
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Modern editorial magazine-style template with clean typography, structured layout, and smooth professional visual flow.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $30
+            </p>
+
+            <a href="8.EditorialCo.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+<!-- CARD  9 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+        <iframe src="9.Luxury.html"
+            class="w-full h-[280px] border-none"
+            loading="lazy">
+        </iframe>
+
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                Luxury Studio Template
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Premium luxury design with elegant layout, soft modern aesthetics, and high-end visual experience for brands.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $30
+            </p>
+
+            <a href="9.Luxury.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+
+<!-- CARD 10 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+        <iframe src="10.CoCo.html"
+            class="w-full h-[280px] border-none"
+            loading="lazy">
+        </iframe>
+
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                CoCo Luxury Studio
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Modern premium CoCo-themed studio template with elegant layout, smooth visual flow, and luxury digital experience for high-end brands.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $35
+            </p>
+
+            <a href="10.CoCo.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+
+<!-- CARD 11 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+        <iframe src="11.SimpleCo.html"
+            class="w-full h-[280px] border-none"
+            loading="lazy">
+        </iframe>
+
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                SimpleCo Studio
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Modern clean one-page company template with smooth layout, simple structure, and professional responsive design for business websites.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $25
+            </p>
+
+            <a href="11.SimpleCo.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+
+
+<!-- CARD 12 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+        <iframe src="12.BrutalCo.html"
+            class="w-full h-[280px] border-none"
+            loading="lazy">
+        </iframe>
+
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                BrutalCo Pink Studio
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Modern brutalist pink-themed studio template with bold aesthetic, glass effect UI, and energetic creative layout for stylish brands.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $25
+            </p>
+
+            <a href="12.BrutalCo.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+
+
+<!-- CARD 13 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+        <iframe src="13.PinkCo.html"
+            class="w-full h-[280px] border-none"
+            loading="lazy">
+        </iframe>
+
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                PinkCo Luxury Studio
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Elegant pink luxury studio template dengan kombinasi soft pink modern, glassmorphism UI, smooth layout, dan tampilan premium yang feminin dan stylish untuk brand kreatif.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $30
+            </p>
+
+            <a href="13.PinkCo.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+
+<!-- CARD 14 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+        <iframe src="14.LiquidFlow.html"
+            class="w-full h-[280px] border-none"
+            loading="lazy">
+        </iframe>
+
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                LiquidFlow Studio
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Modern fluid design studio template dengan konsep liquid layout, smooth floating section, dan visual flow yang unik serta futuristik untuk brand kreatif modern.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $30
+            </p>
+
+            <a href="14.LiquidFlow.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+
+<!-- CARD 15 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+        <iframe src="15.Breathes.html"
+            class="w-full h-[280px] border-none"
+            loading="lazy">
+        </iframe>
+
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                Breathes Studio
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Modern fluid design studio template dengan konsep breathing space, smooth floating section, dan visual flow yang lembut serta futuristik untuk brand kreatif modern.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $33
+            </p>
+
+            <a href="15.Breathes.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+
+<!-- CARD 16 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+        <iframe src="16.CompanyProfile.html"
+            class="w-full h-[280px] border-none"
+            loading="lazy">
+        </iframe>
+
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                Company Profile Studio
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Modern fluid design company profile template dengan konsep profesional, clean layout, smooth section flow, dan tampilan elegan untuk brand bisnis modern.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $25
+            </p>
+
+            <a href="16.CompanyProfile.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+<!-- CARD 17 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card">
+        <iframe src="17.blue.html"
+            class="w-full h-[280px] border-none">
+        </iframe>
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+            Blue Website Template
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+            Clean and modern website design, suitable for business and portfolio.
+            </p>
+            <p class="text-blue-600 font-bold mt-2">
+            Starting from $15
+            </p>
+            <a href="17.blue.html" target="_blank"
+            class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+            View Website
+            </a>
+        </div>
+    </div>
+
+<!-- CARD 18 -->
+    <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden card">
+
+        <iframe src="18.AuRora.html"
+            class="w-full h-[280px] border-none">
+        </iframe>
+
+        <div class="p-4">
+
+            <h3 class="font-semibold text-gray-800">
+                AuRora Creative Studio
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">
+                Soft aurora-inspired modern website template dengan layout smooth, warna cerah pastel, dan desain elegan untuk portfolio kreatif.
+            </p>
+
+            <p class="text-blue-600 font-bold mt-2">
+                Starting from $25
+            </p>
+
+            <a href="18.AuRora.html" target="_blank"
+                class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                View Website
+            </a>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- DARK -->
+<section id="portfolio" class="px-6 py-20">
+
+  <h2 class="text-3xl font-bold text-center mb-12">
+    Template Preview DARK
+  </h2>
+
+  <!-- GRID WRAPPER (INI KUNCI) -->
+  <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+    <!-- CARD 1 -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+      <iframe src="19.gradi.html"
+        class="w-full h-[280px] border-none">
+      </iframe>
+
+      <div class="p-4">
+
+        <h3 class="font-semibold text-gray-800">
+          Gradi Creative Studio
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-1">
+          Modern gradient-inspired website template dengan desain smooth, warna cerah elegan.
+        </p>
+
+        <p class="text-blue-600 font-bold mt-2">
+          Starting from $25
+        </p>
+
+        <a href="19.gradi.html" target="_blank"
+          class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+          View Website
+        </a>
+
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+      <iframe src="20.LUXE.CO.html"
+        class="w-full h-[280px] border-none">
+      </iframe>
+
+      <div class="p-4">
+
+        <h3 class="font-semibold text-gray-800">
+          LUXE.CO Premium Website
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-1">
+          Premium luxury website template dengan desain modern dan clean UI.
+        </p>
+
+        <p class="text-blue-600 font-bold mt-2">
+          Starting from $30
+        </p>
+
+        <a href="20.LUXE.CO.html" target="_blank"
+          class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+          View Website
+        </a>
+
+      </div>
+    </div>
+
+<!-- CARD 3 -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+      <iframe src="21.Gradient.html"
+        class="w-full h-[280px] border-none">
+      </iframe>
+
+      <div class="p-4">
+
+        <h3 class="font-semibold text-gray-800">
+          Gradient Elegant Premium
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-1">
+          Premium gradient website template dengan desain modern dan smooth UI.
+        </p>
+
+        <p class="text-blue-600 font-bold mt-2">
+          Starting from $30
+        </p>
+
+        <a href="21.Gradient.html" target="_blank"
+          class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+          View Website
+        </a>
+
+      </div>
+    </div>
+
+<!-- CARD 4 -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+      <iframe src="22.LuxryCompany.html"
+        class="w-full h-[280px] border-none">
+      </iframe>
+
+      <div class="p-4">
+
+        <h3 class="font-semibold text-gray-800">
+          Luxury Company Premium
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-1">
+          Premium luxury company profile template dengan desain modern, elegan, dan high-end UI untuk bisnis profesional.
+        </p>
+
+        <p class="text-blue-600 font-bold mt-2">
+          Starting from $20
+        </p>
+
+        <a href="22.LuxryCompany.html" target="_blank"
+          class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+          View Website
+        </a>
+
+      </div>
+    </div>
+    
+<!-- CARD 5 -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+      <iframe src="23.NextGenCo.html"
+        class="w-full h-[280px] border-none">
+      </iframe>
+
+      <div class="p-4">
+
+        <h3 class="font-semibold text-gray-800">
+          NextGen Co Premium Experience
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-1">
+          Premium next-generation company profile template dengan desain modern, clean, dan high-end UI untuk bisnis profesional dan startup.
+        </p>
+
+        <p class="text-blue-600 font-bold mt-2">
+          Starting from $30
+        </p>
+
+        <a href="23.NextGenCo.html" target="_blank"
+          class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+          View Website
+        </a>
+
+      </div>
+
+    </div>
+  <!-- CARD 6 -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden card hover:scale-105 transition duration-300">
+
+      <iframe src="24.Experience.html"
+        class="w-full h-[280px] border-none">
+      </iframe>
+
+      <div class="p-4">
+
+        <h3 class="font-semibold text-gray-800">
+          Experience Luxury Company
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-1">
+          Premium high-end company profile template dengan desain modern, elegant layout, dan UI eksklusif untuk brand profesional.
+        </p>
+
+        <p class="text-blue-600 font-bold mt-2">
+          Starting from $30
+        </p>
+
+        <a href="24.Experience.html" target="_blank"
+          class="block mt-4 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+          View Website
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="px-6 py-24 bg-gradient-to-b from-white to-blue-50">
+
+  <div class="max-w-5xl mx-auto bg-white p-10 rounded-3xl shadow-2xl">
+
+    <h2 class="text-3xl font-bold text-center mb-2">
+      Order Your Website
+    </h2>
+
+    <p class="text-gray-500 text-center mb-10">
+      Choose template & package, then send directly to WhatsApp
+    </p>
+
+    <!-- FORM -->
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- NAME -->
+      <input id="name" type="text" placeholder="Your Name"
+        class="border p-3 rounded-xl w-full outline-none">
+
+      <!-- TEMPLATE -->
+      <select id="template" class="border p-3 rounded-xl w-full outline-none">
+        <option value="">Select Template</option>
+        <option>CUSTOME</option>
+        <option>01 - Light Corporate</option>
+        <option>02 - CreativeCo</option>
+        <option>03 - Elegance</option>
+        <option>04 - Studio</option>
+        <option>05 - Soft Agency</option>
+        <option>06 - Green Luxury</option>
+        <option>07 - Angled Co</option>
+        <option>08 - EditorialCo</option>
+        <option>09 - Luxury Studio</option>
+        <option>10 - CoCo Luxury</option>
+        <option>11 - SimpleCo</option>
+        <option>12 - BrutalCo</option>
+        <option>13 - PinkCo</option>
+        <option>14 - LiquidFlow</option>
+        <option>15 - Breathes</option>
+        <option>16 - Company Profile</option>
+        <option>17 - Blue Template</option>
+        <option>18 - Aurora</option>
+        <option>19 - Gradi Studio</option>
+        <option>20 - LUXE.CO</option>
+        <option>21 - Gradient Premium</option>
+        <option>22 - Luxury Company</option>
+        <option>23 - NextGen Co</option>
+        <option>24 - Experience Luxury</option>
+        
+      </select>
+
+      <!-- PACKAGE / PRICE -->
+      <select id="package" class="border p-3 rounded-xl w-full outline-none">
+
+        <option value="">Select Package</option>
+
+        <option value="Starter - $15">Starter - $15 (Template Only)</option>
+        <option value="Standard - $49">Standard - $49 (Custom Edit)</option>
+        <option value="Premium - $99">Premium - $99 (Full Custom UI)</option>
+        <option value="Business - $199">Business - $199 (Full Website + Backend)</option>
+
+      </select>
+
+      <!-- MESSAGE -->
+      <textarea id="message" placeholder="Your request (optional)"
+        class="border p-3 rounded-xl w-full md:col-span-2 h-32 outline-none"></textarea>
+
+    </div>
+
+    <!-- BUTTON -->
+    <button onclick="sendWA()"
+      class="mt-8 w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-xl font-semibold hover:scale-[1.02] transition">
+
+      Send Order to WhatsApp
+    </button>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 text-gray-400">
+  <p>© 2026 cici.web</p>
+</footer>
+
+<!-- FLOAT WA -->
+<a href="https://wa.me/6283806334428"
+   class="wa-float">
+   💬 Chat
+</a>
+
+<script>
+let index = 0;
+const track = document.getElementById("sliderTrack");
+const totalSlides = track.children.length;
+
+setInterval(() => {
+  index++;
+  if (index >= totalSlides) index = 0;
+
+  track.style.transform = `translateX(-${index * 100}%)`;
+
+}, 3500);
+</script>
+
+<script>
+function sendWA() {
+  let name = document.getElementById("name").value;
+  let template = document.getElementById("template").value;
+  let package = document.getElementById("package").value;
+  let message = document.getElementById("message").value;
+
+  if(!name || !template || !package){
+    alert("Name, Template, and Package are required!");
+    return;
+  }
+
+  let text =
+`NEW WEBSITE ORDER
+
+Name: ${name}
+Template: ${template}
+Package: ${package}
+
+Request:
+${message}
+
+Hello kak, I want to order a website ${template}` ;
+
+  let url = "https://wa.me/6283806334428?text=" + encodeURIComponent(text);
+
+  window.open(url, "_blank");
+}
+</script>
+</body>
+</html>

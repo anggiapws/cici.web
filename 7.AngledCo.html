@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Angled Creative Company</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+<style>
+  body {
+    background: #f8fafc;
+    color: #0f172a;
+    font-family: ui-sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* NAV */
+  .nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:14px 18px;
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.7);
+    border-bottom:1px solid rgba(0,0,0,0.05);
+    display:flex;
+    justify-content:space-between;
+    z-index:50;
+    font-size:14px;
+  }
+
+  @media(min-width:768px){
+    .nav{
+      padding:20px 70px;
+      font-size:16px;
+    }
+  }
+
+  /* SMOOTH SCROLL OFFSET */
+  section {
+    scroll-margin-top: 90px;
+  }
+
+  /* SKEW SECTION */
+  .section-skew {
+    transform: skewY(-4deg);
+    background: white;
+  }
+
+  @media(max-width:768px){
+    .section-skew{
+      transform:none;
+    }
+  }
+
+  .section-content {
+    transform: skewY(4deg);
+  }
+
+  @media(max-width:768px){
+    .section-content{
+      transform:none;
+    }
+  }
+
+  /* CARD */
+  .card {
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    transition: 0.4s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-10px) scale(1.01);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+  }
+
+  /* BUTTON */
+  .btn {
+    background: #111827;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 999px;
+    transition: 0.3s ease;
+    display:inline-block;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+  }
+
+  .accent {
+    color: #ef4444;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="font-bold">AngledCo</div>
+
+  <div class="space-x-4 md:space-x-8 text-gray-600 text-xs md:text-sm">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="home" class="section-skew py-24 md:py-32 mt-10">
+  <div class="section-content max-w-6xl mx-auto px-6 text-center">
+
+    <h1 class="text-3xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+      Creative <span class="accent">Angled</span> Company
+    </h1>
+
+    <p class="text-gray-600 max-w-2xl mx-auto mb-8 text-sm md:text-base">
+      Modern creative agency with angled visual identity and smooth user experience.
+    </p>
+
+    <button class="btn">Explore Work</button>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+    <div data-aos="fade-right">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">About Us</h2>
+      <p class="text-gray-600 mb-4 text-sm md:text-base">
+        We create modern digital experiences with strong identity and clean execution.
+      </p>
+      <p class="text-gray-600 text-sm md:text-base">
+        Focused on design, development, and branding for modern businesses.
+      </p>
+    </div>
+
+    <img src="https://picsum.photos/600/400" class="rounded-xl card w-full" data-aos="fade-left"/>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section-skew py-20">
+  <div class="section-content max-w-6xl mx-auto px-6">
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">Services</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="card p-6" data-aos="zoom-in">
+        <h3 class="font-bold mb-2">Design</h3>
+        <p class="text-gray-600 text-sm">UI/UX modern system</p>
+      </div>
+
+      <div class="card p-6" data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="font-bold mb-2">Development</h3>
+        <p class="text-gray-600 text-sm">Fast & scalable code</p>
+      </div>
+
+      <div class="card p-6" data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="font-bold mb-2">Branding</h3>
+        <p class="text-gray-600 text-sm">Strong identity system</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">Selected Works</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <img src="https://picsum.photos/400/500" class="card w-full"/>
+      <img src="https://picsum.photos/401/500" class="card w-full"/>
+      <img src="https://picsum.photos/402/500" class="card w-full"/>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-skew py-24">
+  <div class="section-content text-center max-w-4xl mx-auto px-6">
+
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      Let’s Build Something Unique
+    </h2>
+
+    <p class="text-gray-600 mb-6 text-sm md:text-base">
+      Creative agency experience with smooth interaction.
+    </p>
+
+    <button class="btn">Start Project</button>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20">
+  <div class="max-w-4xl mx-auto px-6 text-center card p-8 md:p-10" data-aos="fade-up">
+
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">Contact</h2>
+
+    <p class="text-gray-600 mb-6 text-sm md:text-base">
+      your@email.com <br/>
+      +62 812 0000 0000
+    </p>
+
+    <a href="https://wa.me/628120000000" class="btn">Chat Now</a>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-10 text-gray-500 text-sm">
+  <p>&copy; 2026 Designed by cici.web</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 900, once: true });
+</script>
+
+</body>
+</html>

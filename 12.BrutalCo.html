@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aesthetic Brutalist Pink</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+html { scroll-behavior: smooth; }
+
+body {
+  background: linear-gradient(135deg,#fff1f6,#ffe4ec,#fdf2f8);
+  font-family: Inter, sans-serif;
+  color: #111827;
+}
+
+/* NAV */
+header {
+  backdrop-filter: blur(16px);
+}
+
+/* BRUTAL CARD (lebih premium shadow) */
+.brutal {
+  border: 2px solid rgba(0,0,0,0.9);
+  box-shadow: 10px 10px 0 rgba(0,0,0,0.9);
+  background: rgba(255,255,255,0.95);
+  border-radius: 18px;
+  transition: 0.35s ease;
+}
+
+.hover-brutal:hover {
+  transform: translate(-6px,-6px) scale(1.02);
+  box-shadow: 16px 16px 0 rgba(0,0,0,0.9);
+}
+
+/* BUTTON (lebih soft & glow) */
+.btn {
+  background: linear-gradient(135deg,#ec4899,#f472b6,#fb7185);
+  color: white;
+  border-radius: 999px;
+  padding: 12px 26px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 30px rgba(236,72,153,0.25);
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(236,72,153,0.35);
+}
+
+/* GLASS (lebih clean, tidak “blur kotor”) */
+.glass {
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+/* NAV LINK */
+.nav-link {
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ec4899;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #ec4899;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* SECTION FIX */
+section { scroll-margin-top: 90px; }
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<header class="sticky top-0 z-[999] bg-white/90 border-b border-pink-100">
+  <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+
+    <h1 class="font-extrabold text-pink-500 tracking-wide text-lg">
+      BrutalCo
+    </h1>
+
+    <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn hidden md:inline-block">Hire Me</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="text-center px-6 mt-20">
+  <h2 class="text-5xl md:text-6xl font-bold mb-6" data-aos="fade-up">
+    Soft Brutal Aesthetic
+  </h2>
+
+  <p class="max-w-2xl mx-auto text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="200">
+    Elegant brutal design with soft pink tone, modern feel, and premium visual experience.
+  </p>
+
+  <a href="#contact" class="btn">Get Started</a>
+</section>
+
+<!-- STATS -->
+<section class="py-16">
+  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+    <div class="glass p-6" data-aos="fade-up">
+      <h3 class="text-3xl font-bold text-pink-500">200+</h3>
+      <p class="text-gray-600">Projects</p>
+    </div>
+
+    <div class="glass p-6" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-3xl font-bold text-pink-500">500+</h3>
+      <p class="text-gray-600">Clients</p>
+    </div>
+
+    <div class="glass p-6" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-3xl font-bold text-pink-500">15+</h3>
+      <p class="text-gray-600">Years</p>
+    </div>
+
+    <div class="glass p-6" data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-3xl font-bold text-pink-500">24/7</h3>
+      <p class="text-gray-600">Support</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 max-w-6xl mx-auto px-6">
+
+  <h2 class="text-3xl font-bold text-center mb-12">Services</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="brutal p-6 hover-brutal" data-aos="zoom-in">
+      <h3 class="font-semibold text-lg">UI/UX Design</h3>
+      <p class="text-gray-600">Modern clean interface with premium feel.</p>
+    </div>
+
+    <div class="brutal p-6 hover-brutal" data-aos="zoom-in" data-aos-delay="100">
+      <h3 class="font-semibold text-lg">Web Development</h3>
+      <p class="text-gray-600">Fast, responsive, and scalable system.</p>
+    </div>
+
+    <div class="brutal p-6 hover-brutal" data-aos="zoom-in" data-aos-delay="200">
+      <h3 class="font-semibold text-lg">Brand Strategy</h3>
+      <p class="text-gray-600">Strong identity with emotional impact.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center mb-12">Portfolio</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="glass p-4 hover:scale-105 transition">
+        <img src="https://picsum.photos/400/300?1" class="rounded-xl"/>
+      </div>
+
+      <div class="glass p-4 hover:scale-105 transition">
+        <img src="https://picsum.photos/400/300?2" class="rounded-xl"/>
+      </div>
+
+      <div class="glass p-4 hover:scale-105 transition">
+        <img src="https://picsum.photos/400/300?3" class="rounded-xl"/>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 text-center">
+  <h2 class="text-4xl font-bold mb-4">Let’s Build Something Beautiful</h2>
+  <p class="mb-6 text-gray-600">Premium design with emotional aesthetic.</p>
+  <a href="#contact" class="btn">Start Project</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 px-6">
+
+  <div class="max-w-5xl mx-auto glass p-10 grid md:grid-cols-2 gap-10">
+
+    <div>
+      <h2 class="text-3xl font-bold mb-4">Contact</h2>
+      <p class="text-gray-600 mb-4">Let’s work together on something amazing.</p>
+
+      <p>Email: your@email.com</p>
+      <p>WhatsApp: +62 812 0000 0000</p>
+
+      <a href="https://wa.me/628120000000" class="btn mt-6 inline-block">
+        Chat WhatsApp
+      </a>
+    </div>
+
+    <div class="brutal p-6">
+      <input class="w-full p-3 mb-3 rounded border" placeholder="Nama">
+      <input class="w-full p-3 mb-3 rounded border" placeholder="Email">
+      <textarea class="w-full p-3 rounded border" placeholder="Pesan"></textarea>
+      <button class="btn w-full mt-4">Kirim</button>
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="text-center py-8 md:py-10 text-gray-500 text-sm">
+  <p>&copy; 2026 Designed by cici.web</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 900, once: true });
+feather.replace();
+</script>
+
+</body>
+</html>

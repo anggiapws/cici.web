@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+
+/* ===== BASE ===== */
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(212,175,55,0.10), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(246,226,122,0.08), transparent 35%),
+    #05070d;
+  color:#e5e7eb;
+  overflow-x:hidden;
+  padding-top:70px;
+}
+
+/* ===== NAV ===== */
+nav{
+  backdrop-filter: blur(24px);
+  background: rgba(0,0,0,0.45);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+/* ===== TYPO ===== */
+h1,h2,h3{
+  letter-spacing:-0.5px;
+}
+
+/* GOLD GRADIENT TEXT */
+.gradient-text{
+  background: linear-gradient(90deg,#d4af37,#f6e27a,#b8860b);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+/* ===== CARD PREMIUM ===== */
+.card{
+  background: rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(16px);
+  border-radius: 22px;
+  transition:.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(120deg, transparent, rgba(212,175,55,0.12), transparent);
+  transform: translateX(-100%);
+  transition:.7s;
+}
+
+.card:hover::before{
+  transform: translateX(100%);
+}
+
+.card:hover{
+  transform: translateY(-12px);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  border-color: rgba(212,175,55,0.4);
+}
+
+/* ===== BUTTON ===== */
+.btn{
+  background: linear-gradient(90deg,#d4af37,#f6e27a);
+  color:black;
+  padding: 14px 34px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: .3s;
+  display:inline-block;
+}
+
+.btn:hover{
+  transform: scale(1.06);
+  box-shadow: 0 15px 40px rgba(212,175,55,0.3);
+}
+
+/* ===== HERO GLOW ===== */
+.hero-glow{
+  position:absolute;
+  width:500px;
+  height:500px;
+  background: radial-gradient(circle, rgba(212,175,55,0.18), transparent 60%);
+  filter: blur(50px);
+  top:-120px;
+  left:-120px;
+  z-index:-1;
+}
+
+/* ===== SECTION ===== */
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:120px 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed w-full z-50 top-0">
+  <nav>
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+
+      <div class="font-bold tracking-widest text-white">
+        Experience
+      </div>
+
+      <div class="hidden md:flex gap-8 text-sm text-gray-300 items-center">
+        <a href="#" class="hover:text-yellow-300">Home</a>
+        <a href="#features" class="hover:text-yellow-300">Features</a>
+        <a href="#about" class="hover:text-yellow-300">About</a>
+        <a href="#work" class="hover:text-yellow-300">Work</a>
+        <a href="#contact" class="hover:text-yellow-300">Contact</a>
+
+        <a href="#contact" class="btn">
+          Get Started
+        </a>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="h-screen flex items-center justify-center text-center px-6 relative">
+
+  <div class="hero-glow"></div>
+
+  <div data-aos="fade-up">
+
+    <h1 class="text-5xl md:text-7xl font-light mb-6">
+      Build <span class="gradient-text">Luxury</span><br>
+      Digital Experience
+    </h1>
+
+    <p class="max-w-xl mx-auto text-gray-400 mb-10">
+      Premium website template untuk brand high-end, agency, dan SaaS modern yang ingin terlihat mahal dan eksklusif.
+    </p>
+
+    <a class="btn" href="#contact">Start Your Project</a>
+
+  </div>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section id="features" class="section">
+
+  <h2 class="text-center text-3xl gradient-text mb-14">Core Features</h2>
+
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <div class="card p-7" data-aos="zoom-in">
+      <i data-feather="cpu"></i>
+      <h3 class="mt-4 font-semibold">AI Driven System</h3>
+      <p class="text-gray-400 text-sm mt-2">Smart automation for business growth.</p>
+    </div>
+
+    <div class="card p-7" data-aos="zoom-in" data-aos-delay="100">
+      <i data-feather="cloud"></i>
+      <h3 class="mt-4 font-semibold">Cloud Architecture</h3>
+      <p class="text-gray-400 text-sm mt-2">Scalable global infrastructure.</p>
+    </div>
+
+    <div class="card p-7" data-aos="zoom-in" data-aos-delay="200">
+      <i data-feather="shield"></i>
+      <h3 class="mt-4 font-semibold">Enterprise Security</h3>
+      <p class="text-gray-400 text-sm mt-2">Bank-grade protection system.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section grid md:grid-cols-2 gap-12 items-center">
+
+  <div data-aos="fade-right">
+    <h2 class="text-3xl gradient-text mb-5">About The Product</h2>
+    <p class="text-gray-400 leading-relaxed">
+      This premium template is designed for high-value businesses that want to increase trust, conversion, and brand perception instantly.
+    </p>
+  </div>
+
+  <div class="card p-4" data-aos="fade-left">
+    <img src="https://picsum.photos/700/500" class="rounded-xl">
+  </div>
+
+</section>
+
+<!-- ================= WORK ================= -->
+<section id="work" class="section">
+
+  <h2 class="text-center text-3xl gradient-text mb-12">Selected Work</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <img src="https://picsum.photos/400/300?1" class="rounded-xl card">
+    <img src="https://picsum.photos/400/300?2" class="rounded-xl card">
+    <img src="https://picsum.photos/400/300?3" class="rounded-xl card">
+
+  </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+<section id="contact" class="section text-center">
+
+  <h2 class="text-4xl gradient-text mb-6">Let’s Build Something Elite</h2>
+
+  <p class="text-gray-400 mb-8">
+    High-end brands start with premium design systems.
+  </p>
+
+  <a class="btn" href="#">Contact Now</a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-center py-10 text-gray-500 text-sm">
+  <p>&copy; 2026 NextGen Luxury Studio</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 900, once: true });
+feather.replace();
+</script>
+
+</body>
+</html>

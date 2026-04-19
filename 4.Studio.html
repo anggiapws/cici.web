@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Smooth Luxury Agency</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  html{
+    scroll-behavior:smooth;
+  }
+
+  body{
+    background:#f5f5f5;
+    color:#111827;
+    font-family: ui-sans-serif;
+  }
+
+  /* NAV RESPONSIVE */
+  .nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:16px 20px;
+    backdrop-filter: blur(14px);
+    background: rgba(255,255,255,0.6);
+    border-bottom:1px solid rgba(0,0,0,0.05);
+    display:flex;
+    justify-content:space-between;
+    z-index:50;
+    font-size:14px;
+  }
+
+  @media(min-width:768px){
+    .nav{
+      padding:22px 80px;
+      font-size:16px;
+    }
+  }
+
+  /* SECTION RESPONSIVE */
+  .section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:100px 20px;
+  }
+
+  @media(min-width:768px){
+    .section{
+      padding:140px 80px;
+    }
+  }
+
+  /* ANIMATION */
+  .fade{
+    opacity:0;
+    transform: translateY(30px);
+    transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .fade.show{
+    opacity:1;
+    transform: translateY(0);
+  }
+
+  /* TITLE RESPONSIVE */
+  .title{
+    font-size:36px;
+    font-weight:600;
+    line-height:1.1;
+    letter-spacing:-1px;
+  }
+
+  @media(min-width:768px){
+    .title{
+      font-size:64px;
+    }
+  }
+
+  .muted{
+    color:#6b7280;
+  }
+
+  /* CARD */
+  .card{
+    background:white;
+    border-radius:24px;
+    box-shadow:0 30px 80px rgba(0,0,0,0.08);
+    transition:0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .card:hover{
+    transform:translateY(-10px) scale(1.01);
+  }
+
+  /* BUTTON */
+  .btn{
+    background:#111827;
+    color:white;
+    padding:12px 22px;
+    border-radius:999px;
+    transition:0.4s;
+    display:inline-block;
+    font-size:14px;
+  }
+
+  @media(min-width:768px){
+    .btn{
+      padding:14px 30px;
+      font-size:16px;
+    }
+  }
+
+  .btn:hover{
+    transform:translateY(-2px);
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="font-semibold">SmoothStudio</div>
+  <div class="text-gray-500 space-x-4 md:space-x-8">
+    <a href="#hero">Home</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero" class="section">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 w-full items-center">
+
+    <div class="fade">
+
+      <div class="muted mb-3 md:mb-4 text-xs md:text-base">DIGITAL STUDIO</div>
+
+      <h1 class="title mb-6 md:mb-8">
+        Design That<br/>Moves Smooth
+      </h1>
+
+      <p class="muted mb-6 md:mb-8 max-w-md text-sm md:text-base">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Clean, slow, premium experience.
+      </p>
+
+      <a class="btn" href="#work">Start Project</a>
+
+    </div>
+
+    <div class="fade">
+      <div class="card p-3 md:p-4">
+        <img src="https://picsum.photos/800/900" class="rounded-2xl w-full"/>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="section">
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full">
+
+    <div class="card p-5 md:p-6 fade">
+      <h3 class="font-semibold mb-2">Branding</h3>
+      <p class="muted text-sm">Luxury identity system</p>
+    </div>
+
+    <div class="card p-5 md:p-6 fade">
+      <h3 class="font-semibold mb-2">UI Design</h3>
+      <p class="muted text-sm">Clean interface experience</p>
+    </div>
+
+    <div class="card p-5 md:p-6 fade">
+      <h3 class="font-semibold mb-2">Development</h3>
+      <p class="muted text-sm">Fast modern system</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- IMAGE -->
+<section class="section">
+
+  <div class="card p-2 md:p-3 w-full fade">
+    <img src="https://picsum.photos/1400/700" class="rounded-2xl w-full"/>
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section id="contact" class="section text-center">
+
+  <div class="w-full fade">
+
+    <h2 class="text-3xl md:text-5xl font-semibold mb-6">
+      Let’s Build Something Beautiful
+    </h2>
+
+    <p class="muted mb-8 md:mb-10 text-sm md:text-base">
+      Premium smooth experience for modern brands.
+    </p>
+
+    <a class="btn" href="#">
+      Contact Now
+    </a>
+
+  </div>
+
+</section>
+
+<footer class="text-center text-xs md:text-sm text-gray-400 py-10 border-t">
+  <p>&copy; 2026 Designed by cici.web</p>
+</footer>
+
+<script>
+const items = document.querySelectorAll(".fade");
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+},{threshold:0.15});
+
+items.forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Luxury Digital Agency</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+<style>
+  body{
+    margin:0;
+    font-family: ui-sans-serif;
+    background: linear-gradient(180deg,#f8fafc,#f3f4f6,#ffffff);
+    color:#111827;
+    overflow-x:hidden;
+  }
+
+  html{
+    scroll-behavior:smooth;
+  }
+
+  /* GLASS NAV (biar premium) */
+  .nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:14px 18px;
+    backdrop-filter: blur(18px);
+    background: rgba(255,255,255,0.6);
+    border-bottom:1px solid rgba(0,0,0,0.06);
+    display:flex;
+    justify-content:space-between;
+    z-index:50;
+  }
+
+  @media(min-width:768px){
+    .nav{
+      padding:22px 80px;
+    }
+  }
+
+  /* SECTION DEPTH */
+  .section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:110px 18px;
+  }
+
+  @media(min-width:768px){
+    .section{
+      padding:150px 80px;
+    }
+  }
+
+  /* TITLE LEBIH PREMIUM */
+  .title{
+    font-size:36px;
+    font-weight:600;
+    letter-spacing:-1px;
+    line-height:1.05;
+  }
+
+  @media(min-width:768px){
+    .title{
+      font-size:66px;
+    }
+  }
+
+  .sub{
+    color:#6b7280;
+    max-width:520px;
+    font-size:14px;
+  }
+
+  @media(min-width:768px){
+    .sub{
+      font-size:18px;
+    }
+  }
+
+  /* BUTTON LEBIH GLOW */
+  .btn{
+    background:#111827;
+    color:white;
+    padding:12px 22px;
+    border-radius:999px;
+    transition:0.4s;
+    display:inline-block;
+    font-size:14px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  }
+
+  @media(min-width:768px){
+    .btn{
+      padding:14px 28px;
+      font-size:16px;
+    }
+  }
+
+  .btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 40px rgba(0,0,0,0.2);
+  }
+
+  /* CARD LEBIH DEEP */
+  .card{
+    background:white;
+    border-radius:24px;
+    box-shadow:0 25px 80px rgba(0,0,0,0.10);
+    transition:0.5s ease;
+    width:100%;
+  }
+
+  .card:hover{
+    transform:translateY(-12px) scale(1.01);
+    box-shadow:0 35px 90px rgba(0,0,0,0.18);
+  }
+
+  .muted{
+    color:#9ca3af;
+  }
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="font-semibold">LuxuryStudio</div>
+  <div class="space-x-4 md:space-x-8 text-xs md:text-sm text-gray-500">
+    <a href="#home">Work</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="home" class="section">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center w-full">
+
+    <div data-aos="fade-up" data-aos-duration="1200">
+
+      <h1 class="title mb-6">
+        Design That Feels<br/>Expensive & Timeless
+      </h1>
+
+      <p class="sub mb-8">
+        Minimal, elegant, and focused on conversion for premium modern brands.
+      </p>
+
+      <a class="btn" href="#contact">Start Project</a>
+
+    </div>
+
+    <div data-aos="fade-left" data-aos-duration="1200">
+      <div class="card p-3 md:p-4">
+        <img src="https://picsum.photos/700/800" class="rounded-2xl w-full"/>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 w-full text-center">
+
+    <div data-aos="fade-up" data-aos-duration="1200">
+      <div class="text-4xl md:text-5xl font-semibold">200+</div>
+      <div class="muted mt-2">Projects</div>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+      <div class="text-4xl md:text-5xl font-semibold">50+</div>
+      <div class="muted mt-2">Brands</div>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+      <div class="text-4xl md:text-5xl font-semibold">10y</div>
+      <div class="muted mt-2">Experience</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="w-full">
+
+    <h2 class="text-3xl md:text-4xl font-semibold mb-10 md:mb-14" data-aos="fade-up" data-aos-duration="1200">
+      Services
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+
+      <div class="card p-6 md:p-8" data-aos="fade-up" data-aos-duration="1200">
+        <h3 class="text-lg md:text-xl font-semibold mb-2">Brand Strategy</h3>
+        <p class="muted">Premium identity for modern brands.</p>
+      </div>
+
+      <div class="card p-6 md:p-8" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+        <h3 class="text-lg md:text-xl font-semibold mb-2">UI/UX Design</h3>
+        <p class="muted">Minimal high conversion interface.</p>
+      </div>
+
+      <div class="card p-6 md:p-8" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+        <h3 class="text-lg md:text-xl font-semibold mb-2">Development</h3>
+        <p class="muted">Fast scalable modern system.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="section text-center">
+
+  <div class="w-full" data-aos="zoom-in" data-aos-duration="1400">
+
+    <h2 class="text-3xl md:text-5xl font-semibold mb-6">
+      Let’s Build Something Exceptional
+    </h2>
+
+    <p class="muted mb-10">
+      High-end digital experience for modern business.
+    </p>
+
+    <a class="btn" href="#">
+      Contact Us
+    </a>
+
+  </div>
+
+</section>
+
+<footer class="text-center py-8 md:py-10 text-gray-500 text-sm">
+  <p>&copy; 2026 Designed by cici.web</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 1200,
+  once: true,
+  easing: "ease-out-cubic"
+});
+</script>
+
+</body>
+</html>

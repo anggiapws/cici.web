@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Gradient Elegant Company</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    font-family: ui-sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+    color: white;
+    overflow-x: hidden;
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #a78bfa, #22d3ee);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .card {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    transition: 0.4s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(34,211,238,0.2);
+  }
+
+  .btn {
+    background: linear-gradient(to right,#22d3ee,#a78bfa);
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(167,139,250,0.4);
+  }
+
+  /* FIXED BLOBS */
+  .blob {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(167,139,250,0.4), transparent 70%);
+    filter: blur(90px);
+    z-index: -1;
+    opacity: 0.7;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- BACKGROUND EFFECT -->
+<div class="blob" style="top:-120px; left:-120px;"></div>
+<div class="blob" style="bottom:-120px; right:-120px;"></div>
+
+<!-- HERO -->
+<section class="py-32 text-center px-6">
+  <h1 class="text-5xl font-bold mb-6 gradient-text" data-aos="fade-up">
+    Elegant Gradient Company
+  </h1>
+
+  <p class="max-w-2xl mx-auto text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="150">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modern digital company template with premium gradient UI.
+  </p>
+
+  <a class="btn" href="#">Explore Now</a>
+</section>
+
+<!-- ABOUT -->
+<section class="py-20 max-w-6xl mx-auto px-6">
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+
+    <div data-aos="fade-right">
+      <h2 class="text-3xl font-bold mb-4 gradient-text">About Us</h2>
+
+      <p class="text-gray-300 mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modern agency with futuristic design system.
+      </p>
+
+      <p class="text-gray-300">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Clean structure, elegant UI, and smooth experience.
+      </p>
+    </div>
+
+    <div class="card p-6" data-aos="fade-left">
+      <img src="https://picsum.photos/600/400" class="rounded-xl">
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Services</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="card p-6" data-aos="zoom-in">
+        <h3 class="font-semibold mb-2">Design</h3>
+        <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="card p-6" data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="font-semibold mb-2">Development</h3>
+        <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="card p-6" data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="font-semibold mb-2">Strategy</h3>
+        <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="py-20 text-center">
+
+  <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+
+    <div>
+      <h3 class="text-3xl font-bold gradient-text">120+</h3>
+      <p class="text-gray-300">Projects</p>
+    </div>
+
+    <div>
+      <h3 class="text-3xl font-bold gradient-text">300+</h3>
+      <p class="text-gray-300">Clients</p>
+    </div>
+
+    <div>
+      <h3 class="text-3xl font-bold gradient-text">15+</h3>
+      <p class="text-gray-300">Years</p>
+    </div>
+
+    <div>
+      <h3 class="text-3xl font-bold gradient-text">24/7</h3>
+      <p class="text-gray-300">Support</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PORTFOLIO -->
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Portfolio</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <img src="https://picsum.photos/400/300?1" class="rounded-xl card">
+      <img src="https://picsum.photos/400/300?2" class="rounded-xl card">
+      <img src="https://picsum.photos/400/300?3" class="rounded-xl card">
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 text-center">
+
+  <h2 class="text-4xl font-bold mb-4 gradient-text">
+    Let’s Work Together
+  </h2>
+
+  <p class="text-gray-300 mb-6">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  </p>
+
+  <a class="btn" href="#">Start Project</a>
+
+</section>
+
+<!-- CONTACT -->
+<section class="py-20 px-6">
+
+  <div class="max-w-4xl mx-auto card p-10 text-center">
+
+    <h2 class="text-3xl font-bold mb-4 gradient-text">Contact</h2>
+
+    <p class="text-gray-300 mb-6">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p>Email: your@email.com</p>
+    <p class="mb-6">WhatsApp: +62 812 0000 0000</p>
+
+    <a href="https://wa.me/628120000000" class="btn">Chat WhatsApp</a>
+
+  </div>
+
+</section>
+
+<footer class="text-center py-8 md:py-10 text-gray-500 text-sm">
+  <p>&copy; 2026 Designed by cici.web</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 1000, once: true });
+</script>
+
+</body>
+</html>

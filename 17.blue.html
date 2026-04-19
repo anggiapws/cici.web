@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corporate Blue Premium</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+html { scroll-behavior: smooth; }
+
+body{
+  background: radial-gradient(circle at top, #e0f2fe, #f8fafc 40%, #ffffff);
+  color:#0f172a;
+}
+
+/* NAV */
+.nav{
+  position:sticky;
+  top:0;
+  z-index:50;
+  backdrop-filter: blur(16px);
+  background: rgba(255,255,255,0.7);
+  border-bottom:1px solid rgba(0,0,0,0.05);
+}
+
+/* CARD PREMIUM */
+.card{
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  box-shadow: 0 20px 60px rgba(2,132,199,0.12);
+  transition: .4s ease;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 30px 80px rgba(37,99,235,0.18);
+}
+
+/* BUTTON */
+.btn{
+  background: linear-gradient(135deg,#2563eb,#60a5fa);
+  color:white;
+  padding:12px 26px;
+  border-radius:999px;
+  font-weight:600;
+  display:inline-block;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(37,99,235,0.25);
+}
+
+/* HERO TEXT */
+.hero-title{
+  background: linear-gradient(90deg,#1d4ed8,#60a5fa);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+/* FLOAT EFFECT */
+.float{
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-12px)}
+}
+</style>
+</head>
+
+<body class="text-gray-700">
+
+<!-- NAV -->
+<header class="nav">
+  <div class="max-w-6xl mx-auto flex justify-between p-4">
+    <h1 class="font-bold text-blue-600">BlueCorp</h1>
+    <nav class="space-x-6 hidden md:block text-sm">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="py-12 text-center px-6">
+  <h1 class="text-5xl md:text-6xl font-bold mb-6 hero-title" data-aos="fade-up">
+    Professional Corporate Website
+  </h1>
+
+  <p class="max-w-2xl mx-auto mb-8 text-gray-500" data-aos="fade-up" data-aos-delay="150">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  </p>
+
+  <button class="btn" data-aos="zoom-in">Get Started</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-6xl mx-auto px-6 py-20">
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+
+    <div data-aos="fade-right">
+      <h2 class="text-3xl font-bold mb-4 text-blue-600">About Company</h2>
+      <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="card p-4 float" data-aos="fade-left">
+      <img src="https://picsum.photos/500/300" class="rounded-xl w-full">
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 bg-white/60">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center mb-12 text-blue-600">
+      Services
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="card p-6" data-aos="zoom-in">
+        <h3 class="font-semibold mb-2">Consulting</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="card p-6" data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="font-semibold mb-2">Management</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="card p-6" data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="font-semibold mb-2">Development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="py-20 max-w-5xl mx-auto px-6">
+  <h2 class="text-3xl font-bold text-center mb-10 text-blue-600">Our Journey</h2>
+
+  <div class="space-y-6">
+
+    <div class="card p-6" data-aos="fade-up">2020 - Lorem ipsum dolor sit amet.</div>
+    <div class="card p-6" data-aos="fade-up" data-aos-delay="100">2022 - Lorem ipsum dolor sit amet.</div>
+    <div class="card p-6" data-aos="fade-up" data-aos-delay="200">2025 - Lorem ipsum dolor sit amet.</div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 text-center bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+  <h2 class="text-3xl font-bold mb-4">Let’s Work Together</h2>
+  <p class="mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <button class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:scale-105 transition">
+    Contact Us
+  </button>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 px-6">
+  <div class="max-w-4xl mx-auto card p-10 text-center">
+
+    <h2 class="text-3xl font-bold mb-4 text-blue-600">Contact</h2>
+
+    <p class="mb-6 text-gray-500">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p>Email: your@email.com</p>
+    <p class="mb-6">WhatsApp: +62 812 0000 0000</p>
+
+    <a href="https://wa.me/628120000000" class="btn">Chat WhatsApp</a>
+
+  </div>
+</section>
+
+<footer class="text-center py-8 md:py-10 text-gray-500 text-sm">
+  <p>&copy; 2026 Designed by cici.web</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 900, once: true });
+</script>
+
+</body>
+</html>

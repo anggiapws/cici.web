@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Company Profile Premium</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+body {
+  background: radial-gradient(circle at top, #0b0b0b, #000);
+  color: #e5e5e5;
+  font-family: ui-sans-serif, system-ui;
+}
+
+/* GOLD TEXT */
+.gold-text {
+  background: linear-gradient(to right, #d4af37, #f6e27a, #d4af37);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* GLASS CARD */
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  transition: .4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(212,175,55,0.15);
+}
+
+/* BUTTON */
+.btn {
+  background: linear-gradient(to right,#d4af37,#f6e27a);
+  color: black;
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* SECTION */
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 90px 20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="py-32 text-center px-6">
+  <h1 class="text-5xl md:text-6xl font-light mb-6 gold-text" data-aos="fade-up">
+    Luxury Company Profile
+  </h1>
+
+  <p class="max-w-2xl mx-auto text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
+    Premium website template untuk brand, agency, dan bisnis modern yang ingin terlihat mahal, clean, dan profesional.
+  </p>
+
+  <div data-aos="fade-up" data-aos-delay="300">
+    <a href="#contact" class="btn">Get Started</a>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section grid md:grid-cols-3 gap-6">
+
+  <div class="card p-6" data-aos="zoom-in">
+    <h3 class="text-lg font-semibold gold-text">Premium Design</h3>
+    <p class="text-gray-400 mt-2">Clean UI dengan aesthetic luxury modern.</p>
+  </div>
+
+  <div class="card p-6" data-aos="zoom-in" data-aos-delay="100">
+    <h3 class="text-lg font-semibold gold-text">High Conversion</h3>
+    <p class="text-gray-400 mt-2">Struktur dibuat untuk meningkatkan sales.</p>
+  </div>
+
+  <div class="card p-6" data-aos="zoom-in" data-aos-delay="200">
+    <h3 class="text-lg font-semibold gold-text">Fast Performance</h3>
+    <p class="text-gray-400 mt-2">Ringan, cepat, dan mobile optimized.</p>
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="section grid md:grid-cols-2 gap-10 items-center">
+
+  <div data-aos="fade-right">
+    <h2 class="text-3xl gold-text mb-4">About Us</h2>
+    <p class="text-gray-400 mb-3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Premium template design for modern business.
+    </p>
+    <p class="text-gray-400">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Built for conversion and aesthetic branding.
+    </p>
+  </div>
+
+  <div class="card p-4" data-aos="fade-left">
+    <img src="https://picsum.photos/600/400" class="rounded-xl">
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+
+  <h2 class="text-3xl text-center gold-text mb-12">Our Services</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="card p-6">
+      <h3 class="font-semibold">Consulting</h3>
+      <p class="text-gray-400 mt-2">Business growth strategy.</p>
+    </div>
+
+    <div class="card p-6">
+      <h3 class="font-semibold">Branding</h3>
+      <p class="text-gray-400 mt-2">Luxury brand identity design.</p>
+    </div>
+
+    <div class="card p-6">
+      <h3 class="font-semibold">Development</h3>
+      <p class="text-gray-400 mt-2">Modern web development.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PORTFOLIO -->
+<section class="section">
+
+  <h2 class="text-3xl text-center gold-text mb-12">Portfolio</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <img src="https://picsum.photos/400/300?1" class="rounded-xl card">
+    <img src="https://picsum.photos/400/300?2" class="rounded-xl card">
+    <img src="https://picsum.photos/400/300?3" class="rounded-xl card">
+
+  </div>
+
+</section>
+
+<!-- PRICING -->
+<section class="section text-center">
+
+  <h2 class="text-3xl gold-text mb-10">Pricing</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="card p-6">
+      <h3>Basic</h3>
+      <p class="text-3xl mt-3">$29</p>
+    </div>
+
+    <div class="card p-6">
+      <h3>Pro</h3>
+      <p class="text-3xl mt-3">$59</p>
+    </div>
+
+    <div class="card p-6">
+      <h3>Enterprise</h3>
+      <p class="text-3xl mt-3">$99</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="section text-center">
+
+  <h2 class="text-3xl gold-text mb-6">Testimonials</h2>
+
+  <div class="card p-8 max-w-2xl mx-auto">
+    <p class="text-gray-400 italic">
+      “Template ini terlihat sangat mahal, clean, dan langsung meningkatkan trust bisnis kami.”
+    </p>
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section id="contact" class="section text-center">
+
+  <h2 class="text-4xl gold-text mb-4">Ready to Start?</h2>
+  <p class="text-gray-400 mb-6">Let’s build something premium together.</p>
+
+  <a href="#" class="btn">Contact Now</a>
+
+</section>
+
+<footer class="text-center py-8 md:py-10 text-gray-500 text-sm">
+  <p>&copy; 2026 Designed by cici.web</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 900, once: true });
+</script>
+
+</body>
+</html>

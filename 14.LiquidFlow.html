@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Liquid Flow Studio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:#f8fafc;
+  color:#0f172a;
+  font-family: ui-sans-serif;
+  overflow-x:hidden;
+}
+
+/* NAVBAR FIX PREMIUM */
+.nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:18px 40px;
+  backdrop-filter: blur(22px);
+  background: rgba(255,255,255,0.65);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:50;
+  border-bottom:1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.nav a{
+  margin:0 12px;
+  font-size:14px;
+  color:#64748b;
+  text-decoration:none;
+  position:relative;
+  transition:0.3s ease;
+}
+
+.nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:0%;
+  height:2px;
+  background:#6366f1;
+  transition:0.3s ease;
+  border-radius:10px;
+}
+
+.nav a:hover{
+  color:#0f172a;
+  transform: translateY(-1px);
+}
+
+.nav a:hover::after{
+  width:100%;
+}
+
+/* MOBILE MENU */
+.menu{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+}
+
+@media (max-width:768px){
+  .menu{
+    display:block;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(20px);
+    flex-direction:column;
+    padding:20px;
+    border-bottom:1px solid #eee;
+
+    transform: translateY(-20px);
+    opacity:0;
+    pointer-events:none;
+    transition:0.4s ease;
+  }
+
+  .nav-links.active{
+    transform: translateY(0);
+    opacity:1;
+    pointer-events:auto;
+  }
+
+  .nav-links a{
+    padding:10px 0;
+    margin:0;
+  }
+}
+
+/* BACKGROUND BLOBS */
+.blob{
+  position:absolute;
+  width:500px;
+  height:500px;
+  background: radial-gradient(circle, rgba(99,102,241,0.15), transparent 70%);
+  border-radius:50%;
+  filter: blur(40px);
+  animation: float 10s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%,100%{ transform:translate(0,0);}
+  50%{ transform:translate(50px,-40px);}
+}
+
+/* SECTION */
+.section{
+  min-height:100vh;
+  padding:140px 40px;
+  position:relative;
+}
+
+@media(max-width:768px){
+  .section{
+    padding:120px 20px;
+  }
+}
+
+/* TYPO */
+.title{
+  font-size:clamp(40px,6vw,76px);
+  font-weight:600;
+  line-height:1;
+  letter-spacing:-2px;
+}
+
+.muted{
+  color:#64748b;
+}
+
+/* BUTTON */
+.btn{
+  background:#0f172a;
+  color:white;
+  padding:14px 32px;
+  border-radius:999px;
+  display:inline-block;
+}
+
+/* CARD */
+.card{
+  background:white;
+  border-radius:30px;
+  box-shadow:0 40px 120px rgba(0,0,0,0.08);
+}
+
+/* FADE ANIMATION */
+.fade{
+  opacity:0;
+  transform: translateY(50px);
+  transition:1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.fade.show{
+  opacity:1;
+  transform: translateY(0);
+}
+
+/* CURVE STYLE */
+.curve{
+  border-radius:80px 20px 80px 20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="font-semibold">LiquidFlow</div>
+
+  <div class="menu" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links flex">
+    <a href="#hero">Home</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<!-- BACKGROUND -->
+<div class="blob top-40 left-10"></div>
+<div class="blob bottom-0 right-10"></div>
+
+<!-- HERO -->
+<section id="hero" class="section flex items-center">
+
+  <div class="grid md:grid-cols-2 gap-20 items-center w-full">
+
+    <div class="fade">
+
+      <h1 class="title mb-8">
+        Design<br/>That Flows
+      </h1>
+
+      <p class="muted mb-8 max-w-md">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Everything is fluid, not boxed.
+      </p>
+
+      <a class="btn" href="#contact">Start Project</a>
+
+    </div>
+
+    <div class="fade">
+      <div class="card curve p-4">
+        <img src="https://picsum.photos/800/900" class="rounded-[40px] w-full"/>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FLOATING CONTENT -->
+<section id="work" class="section">
+
+  <div class="fade flex flex-col gap-10">
+
+    <div class="card p-10 curve md:w-2/3 w-full">
+      <h2 class="text-3xl font-semibold mb-4">Creative Flow System</h2>
+      <p class="muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="card p-10 curve md:w-1/2 w-full self-end">
+      Minimal direction, high impact design.
+    </div>
+
+    <div class="card p-10 curve md:w-3/4 w-full">
+      We don’t use rigid layout systems anymore.
+    </div>
+
+  </div>
+
+</section>
+
+<!-- IMAGE -->
+<section class="section">
+  <div class="fade card curve p-4">
+    <img src="https://picsum.photos/1400/700" class="rounded-[50px] w-full"/>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="section text-center">
+
+  <div class="fade">
+
+    <h2 class="text-6xl font-semibold mb-6">
+      Let’s Build Something Fluid
+    </h2>
+
+    <p class="muted mb-10">
+      No boxes. No grid. Just flow.
+    </p>
+
+    <a class="btn" href="#">
+      Contact Now
+    </a>
+
+  </div>
+
+</section>
+
+<footer class="text-center py-8 md:py-10 text-gray-500 text-sm">
+  <p>&copy; 2026 Designed by cici.web</p>
+</footer>
+
+<script>
+/* FADE ON SCROLL */
+const items = document.querySelectorAll(".fade");
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add("show");
+    }
+  });
+},{threshold:0.15});
+
+items.forEach(i=>observer.observe(i));
+
+/* MOBILE MENU */
+function toggleMenu(){
+  document.querySelector(".nav-links").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

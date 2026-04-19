@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gradient Elegant Company Premium</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color:white;
+  overflow-x:hidden;
+}
+
+.nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:50;
+  backdrop-filter: blur(20px);
+  background: rgba(0,0,0,0.35);
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.nav-inner{
+  max-width:1100px;
+  margin:auto;
+  padding:18px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:60px;
+  align-items:center;
+  padding:120px 20px 60px;
+  max-width:1100px;
+  margin:auto;
+}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;}
+}
+
+.title{
+  font-size:clamp(42px,6vw,72px);
+  line-height:1.05;
+  font-weight:300;
+  letter-spacing:-1px;
+}
+
+.gradient-text{
+  background: linear-gradient(to right,#a78bfa,#22d3ee,#60a5fa);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.card{
+  border-radius:24px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,0.08);
+  transition:.5s;
+  box-shadow:0 20px 60px rgba(0,0,0,0.5);
+}
+.card:hover{
+  transform: scale(1.03) rotate(0deg);
+}
+
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:90px 20px;
+}
+
+.box{
+  background: rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:26px;
+  border-radius:18px;
+  transition:.4s;
+}
+.box:hover{
+  transform:translateY(-8px);
+  border-color:#22d3ee;
+}
+
+.btn{
+  background: linear-gradient(to right,#22d3ee,#a78bfa);
+  padding:12px 28px;
+  border-radius:999px;
+  display:inline-block;
+  font-weight:600;
+  transition:.3s;
+}
+.btn:hover{transform:scale(1.05);}
+
+.price-card{
+  background: rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:18px;
+  padding:30px;
+  transition:.4s;
+}
+.price-card:hover{
+  transform:translateY(-10px);
+  border-color:#60a5fa;
+}
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+  <div class="nav-inner">
+    <div class="font-semibold tracking-wider">GradientCo</div>
+    <div class="hidden md:flex gap-6 text-sm text-gray-300">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Work</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</div>
+
+<section class="hero">
+
+  <div data-aos="fade-up">
+    <h1 class="title">
+      Lorem <span class="gradient-text">Ipsum</span><br>
+      Dolor Sit Amet
+    </h1>
+
+    <p class="text-gray-300 mt-6 max-w-md">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <div class="mt-8">
+      <a class="btn" href="#">Lorem Ipsum</a>
+    </div>
+  </div>
+
+  <div class="card" data-aos="fade-left">
+    <img src="https://picsum.photos/700/800" class="w-full h-full object-cover">
+  </div>
+
+</section>
+
+<section class="section">
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+
+    <div data-aos="fade-right">
+      <h2 class="text-3xl font-light text-cyan-300">Lorem Ipsum Dolor</h2>
+      <p class="text-gray-400 mt-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <div class="box" data-aos="fade-left">
+      <p class="text-gray-300">
+        Lorem ipsum dolor sit amet<br>
+        Lorem ipsum dolor sit amet<br>
+        Lorem ipsum dolor sit amet<br>
+        Lorem ipsum dolor sit amet
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section text-center">
+
+  <h2 class="text-3xl text-cyan-300">Lorem Ipsum Pricing</h2>
+
+  <div class="grid md:grid-cols-3 gap-6 mt-10">
+
+    <div class="price-card" data-aos="fade-up">
+      <h3>Lorem</h3>
+      <p class="text-3xl mt-3">$29</p>
+    </div>
+
+    <div class="price-card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Ipsum</h3>
+      <p class="text-3xl mt-3">$59</p>
+    </div>
+
+    <div class="price-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Dolor</h3>
+      <p class="text-3xl mt-3">$99</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section text-center">
+
+  <h2 class="text-2xl text-cyan-300">Lorem Ipsum</h2>
+
+  <div class="box mt-8 max-w-xl mx-auto">
+    <p class="text-gray-300 italic">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    </p>
+  </div>
+
+</section>
+
+<section class="section text-center">
+
+  <h2 class="text-3xl font-light">Lorem Ipsum Dolor Sit</h2>
+  <p class="text-gray-400 mt-3">Lorem ipsum dolor sit amet</p>
+
+  <div class="mt-6">
+    <a class="btn" href="#">Lorem Ipsum</a>
+  </div>
+
+</section>
+
+
+<footer class="text-center py-8 md:py-10 text-gray-500 text-sm">
+  <p>&copy; 2026 Designed by cici.web</p>
+</footer>
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 900, once: true });
+</script>
+
+</body>
+</html>

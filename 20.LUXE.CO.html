@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUXE.CO - Premium Website Template</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-bg { background: radial-gradient(circle at top, #111827, #0b0f1a); }
+    .gold-text { background: linear-gradient(to right, #facc15, #fde68a); -webkit-background-clip: text; color: transparent; }
+    .card-hover { transition: 0.4s ease; }
+    .card-hover:hover { transform: translateY(-10px); }
+    .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
+  </style>
+</head>
+
+<body class="gradient-bg text-gray-200">
+
+<!-- NAV -->
+<header class="fixed w-full z-50 bg-black/40 backdrop-blur border-b border-gray-800">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+    <h1 class="text-lg tracking-widest font-light gold-text">LUXE.CO</h1>
+
+    <nav class="hidden md:flex space-x-8 text-sm">
+      <a href="#home" class="hover:text-yellow-300">Home</a>
+      <a href="#about" class="hover:text-yellow-300">About</a>
+      <a href="#services" class="hover:text-yellow-300">Services</a>
+      <a href="#portfolio" class="hover:text-yellow-300">Portfolio</a>
+      <a href="#pricing" class="hover:text-yellow-300">Pricing</a>
+      <a href="#contact" class="hover:text-yellow-300">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="h-screen flex flex-col justify-center items-center text-center px-6">
+  <h2 class="text-5xl md:text-7xl font-light mb-6" data-aos="fade-up">
+    Build <span class="gold-text">Luxury</span> Websites
+  </h2>
+  <p class="max-w-2xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="100">
+    Premium, modern, and high-converting website templates for agencies, businesses, and personal brands.
+  </p>
+  <div class="flex gap-4" data-aos="fade-up" data-aos-delay="200">
+    <a href="#pricing" class="px-6 py-3 bg-yellow-400 text-black rounded-full font-medium">Get Started</a>
+    <a href="#portfolio" class="px-6 py-3 border border-gray-600 rounded-full">View Work</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 border-t border-gray-800">
+  <div class="max-w-5xl mx-auto text-center px-6">
+    <h2 class="text-3xl mb-6 gold-text" data-aos="fade-up">About Us</h2>
+    <p class="text-gray-400" data-aos="fade-up">
+      We craft modern digital experiences with clean UI, fast performance, and conversion-focused design.
+    </p>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="py-16 border-t border-gray-800">
+  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 text-center gap-6">
+    <div data-aos="fade-up"><h3 class="text-2xl gold-text">120+</h3><p>Clients</p></div>
+    <div data-aos="fade-up" data-aos-delay="100"><h3 class="text-2xl gold-text">300+</h3><p>Projects</p></div>
+    <div data-aos="fade-up" data-aos-delay="200"><h3 class="text-2xl gold-text">10+</h3><p>Years</p></div>
+    <div data-aos="fade-up" data-aos-delay="300"><h3 class="text-2xl gold-text">24/7</h3><p>Support</p></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl text-center mb-12 gold-text" data-aos="fade-up">Our Services</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="p-6 border border-gray-700 rounded-xl glass card-hover" data-aos="fade-up">
+        <i data-feather="layout"></i>
+        <h3 class="mt-4">Premium Design</h3>
+        <p class="text-gray-400 text-sm">Clean UI/UX design for high conversion websites.</p>
+      </div>
+      <div class="p-6 border border-gray-700 rounded-xl glass card-hover" data-aos="fade-up" data-aos-delay="100">
+        <i data-feather="code"></i>
+        <h3 class="mt-4">Modern Development</h3>
+        <p class="text-gray-400 text-sm">Fast, responsive, and SEO optimized code.</p>
+      </div>
+      <div class="p-6 border border-gray-700 rounded-xl glass card-hover" data-aos="fade-up" data-aos-delay="200">
+        <i data-feather="shield"></i>
+        <h3 class="mt-4">Secure System</h3>
+        <p class="text-gray-400 text-sm">Safe architecture with best security practices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="py-20 border-t border-gray-800">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl text-center mb-12 gold-text">Portfolio</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <img src="https://picsum.photos/500/400?1" class="rounded-xl hover:scale-105 transition" />
+      <img src="https://picsum.photos/500/400?2" class="rounded-xl hover:scale-105 transition" />
+      <img src="https://picsum.photos/500/400?3" class="rounded-xl hover:scale-105 transition" />
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="py-20">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl mb-10 gold-text">Pricing</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="p-6 border border-gray-700 rounded-xl card-hover">
+        <h3 class="text-xl">Basic</h3>
+        <p class="text-3xl my-4">$99</p>
+        <p class="text-gray-400">Landing page setup</p>
+      </div>
+      <div class="p-6 border border-yellow-400 rounded-xl card-hover">
+        <h3 class="text-xl">Pro</h3>
+        <p class="text-3xl my-4">$199</p>
+        <p class="text-gray-400">Business website</p>
+      </div>
+      <div class="p-6 border border-gray-700 rounded-xl card-hover">
+        <h3 class="text-xl">Enterprise</h3>
+        <p class="text-3xl my-4">$399</p>
+        <p class="text-gray-400">Custom system</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-20 border-t border-gray-800">
+  <div class="max-w-5xl mx-auto text-center px-6">
+    <h2 class="text-3xl mb-10 gold-text">Testimonials</h2>
+    <p class="text-gray-400 italic">"Designnya sangat premium dan meningkatkan conversion bisnis kami."</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 text-center border-t border-gray-800">
+  <h2 class="text-3xl mb-6 gold-text">Contact</h2>
+  <p class="text-gray-400">info@luxeco.com</p>
+  <p class="text-gray-400">+62 812 0000 0000</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-8 md:py-10 text-gray-500 text-sm">
+  <p>&copy; 2026 Designed by cici.web</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+  feather.replace();
+</script>
+
+</body>
+</html>

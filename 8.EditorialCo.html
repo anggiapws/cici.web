@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editorial Magazine Company</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background: #ffffff;
+      color: #111827;
+      scroll-behavior: auto;
+    }
+
+    html {
+      scroll-behavior: auto;
+    }
+
+    .title-line {
+      height: 2px;
+      width: 80px;
+      background: #111827;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+      will-change: transform;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.01);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.10);
+    }
+
+    /* smoother hover images */
+    .hover {
+      transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .hover:hover {
+      transform: translateY(-10px) scale(1.02);
+    }
+
+    .big-text {
+      letter-spacing: -1px;
+    }
+
+    /* subtle fade-in base (lebih smooth dari AOS default) */
+    [data-aos] {
+      transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="max-w-6xl mx-auto px-6 py-20">
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+
+    <div data-aos="fade-up" data-aos-duration="1200">
+      <div class="flex items-center gap-4 mb-4">
+        <div class="title-line"></div>
+        <p class="text-sm uppercase tracking-widest">Editorial Company</p>
+      </div>
+
+      <h1 class="text-5xl font-bold big-text mb-6">
+        Build Modern
+        <br />
+        Digital Experience
+      </h1>
+
+      <p class="text-gray-600 mb-6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+
+      <button class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition duration-500">
+        Explore Work
+      </button>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-duration="1200">
+      <img src="https://picsum.photos/300/400" class="rounded-xl hover" />
+      <img src="https://picsum.photos/300/300" class="rounded-xl hover" />
+      <img src="https://picsum.photos/300/300" class="rounded-xl hover" />
+      <img src="https://picsum.photos/300/400" class="rounded-xl hover" />
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="max-w-6xl mx-auto px-6 py-10">
+  <h2 class="text-3xl font-bold mb-10" data-aos="fade-up" data-aos-duration="1000">What We Do</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="card p-6" data-aos="zoom-in" data-aos-duration="1000">
+      <h3 class="font-bold mb-2">Brand Identity</h3>
+      <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="card p-6" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+      <h3 class="font-bold mb-2">Web Design</h3>
+      <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="card p-6" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+      <h3 class="font-bold mb-2">Development</h3>
+      <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="max-w-6xl mx-auto px-6 py-20">
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="md:col-span-2 card p-8" data-aos="fade-right" data-aos-duration="1200">
+      <h2 class="text-3xl font-bold mb-4">We Create Impactful Design</h2>
+      <p class="text-gray-600 mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quas, dolore.
+      </p>
+      <p class="text-gray-600">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nulla.
+      </p>
+    </div>
+
+    <div class="card p-6" data-aos="fade-left" data-aos-duration="1200">
+      <img src="https://picsum.photos/400/500" class="rounded-xl" />
+    </div>
+
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="max-w-6xl mx-auto px-6 py-10 text-center">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+    <div data-aos="fade-up" data-aos-delay="0">
+      <h3 class="text-3xl font-bold">250+</h3>
+      <p class="text-gray-600">Projects</p>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-3xl font-bold">120+</h3>
+      <p class="text-gray-600">Clients</p>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-3xl font-bold">8+</h3>
+      <p class="text-gray-600">Years</p>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-3xl font-bold">24/7</h3>
+      <p class="text-gray-600">Support</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="max-w-4xl mx-auto px-6 py-20">
+  <div class="card p-10 text-center" data-aos="zoom-in" data-aos-duration="1200">
+
+    <h2 class="text-3xl font-bold mb-4">Let’s Work Together</h2>
+
+    <p class="text-gray-600 mb-6">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, vitae.
+    </p>
+
+    <div class="space-y-2 mb-6">
+      <p>Email: your@email.com</p>
+      <p>WhatsApp: +62 812 0000 0000</p>
+    </div>
+
+    <button class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition duration-500">
+      Contact Now
+    </button>
+
+  </div>
+</section>
+
+<footer class="text-center py-10 text-gray-500">
+  <p>&copy; 2026 Designed by cici.web</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 1200,
+  once: true,
+  easing: "ease-out-cubic"
+});
+</script>
+
+</body>
+</html>

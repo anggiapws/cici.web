@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pastel Company Profile</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+body { background: #fdf6f9; }
+
+/* CARD */
+.pastel-box {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* GRADIENT */
+.soft-gradient {
+  background: linear-gradient(135deg, #fbcfe8, #ddd6fe, #bfdbfe);
+}
+
+/* HOVER */
+.hover-soft:hover {
+  transform: translateY(-6px);
+  transition: 0.3s;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* BUTTON */
+.btn {
+  background: linear-gradient(to right,#f472b6,#a78bfa);
+  color: white;
+  border-radius: 999px;
+  padding: 12px 28px;
+  font-weight: 600;
+  display:inline-block;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* RESPONSIVE FIX */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 16px;
+}
+</style>
+</head>
+
+<body class="text-gray-700">
+
+<!-- HERO -->
+<section class="soft-gradient py-20 md:py-32 text-center px-4">
+  <h1 class="text-3xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+    Elegant Company Profile
+  </h1>
+
+  <p class="max-w-2xl mx-auto mb-6 text-sm md:text-base" data-aos="fade-up" data-aos-delay="200">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, reiciendis.
+  </p>
+
+  <button class="btn">Learn More</button>
+</section>
+
+<!-- ABOUT -->
+<section class="py-16 md:py-20 container">
+  <div class="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
+
+    <div data-aos="fade-right">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">About Company</h2>
+      <p class="mb-4 text-sm md:text-base">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p class="text-sm md:text-base">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+
+    <div class="pastel-box p-4 md:p-6" data-aos="fade-left">
+      <img src="https://picsum.photos/500/300"
+           class="rounded-xl w-full">
+    </div>
+
+  </div>
+</section>
+
+<!-- VISION MISSION -->
+<section class="py-16 md:py-20 bg-white px-4">
+  <div class="container grid md:grid-cols-2 gap-6 md:gap-10">
+
+    <div class="pastel-box p-6 md:p-8 hover-soft" data-aos="fade-up">
+      <h3 class="text-lg md:text-xl font-semibold mb-3">Our Vision</h3>
+      <p class="text-sm md:text-base">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+
+    <div class="pastel-box p-6 md:p-8 hover-soft" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-lg md:text-xl font-semibold mb-3">Our Mission</h3>
+      <p class="text-sm md:text-base">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="py-16 md:py-20 container">
+  <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12">
+    Services
+  </h2>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+    <div class="pastel-box p-6 hover-soft" data-aos="zoom-in">
+      <h3 class="font-semibold">Consulting</h3>
+      <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="pastel-box p-6 hover-soft" data-aos="zoom-in" data-aos-delay="100">
+      <h3 class="font-semibold">Development</h3>
+      <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="pastel-box p-6 hover-soft" data-aos="zoom-in" data-aos-delay="200">
+      <h3 class="font-semibold">Design</h3>
+      <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="py-16 md:py-20 bg-gray-50 px-4">
+  <div class="container text-center">
+
+    <h2 class="text-2xl md:text-3xl font-bold mb-10 md:mb-12">
+      Our Team
+    </h2>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <div class="pastel-box p-6" data-aos="fade-up">
+        <img src="https://picsum.photos/200"
+             class="rounded-full mx-auto mb-4 w-20 h-20 md:w-24 md:h-24 object-cover">
+        <h3 class="font-semibold">John Doe</h3>
+        <p class="text-sm">CEO</p>
+      </div>
+
+      <div class="pastel-box p-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://picsum.photos/201"
+             class="rounded-full mx-auto mb-4 w-20 h-20 md:w-24 md:h-24 object-cover">
+        <h3 class="font-semibold">Jane Smith</h3>
+        <p class="text-sm">Designer</p>
+      </div>
+
+      <div class="pastel-box p-6" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://picsum.photos/202"
+             class="rounded-full mx-auto mb-4 w-20 h-20 md:w-24 md:h-24 object-cover">
+        <h3 class="font-semibold">Alex Lee</h3>
+        <p class="text-sm">Developer</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="py-16 md:py-20 px-4">
+  <div class="container pastel-box p-6 md:p-10 text-center">
+
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">
+      Contact Us
+    </h2>
+
+    <p class="mb-6 text-sm md:text-base">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <p>Email: your@email.com</p>
+    <p class="mb-6">WhatsApp: +62 812 0000 0000</p>
+
+    <a href="https://wa.me/628120000000" class="btn">
+      Chat WhatsApp
+    </a>
+
+  </div>
+</section>
+
+<footer class="text-center py-8 text-gray-500 text-sm">
+  <p>&copy; 2026 Designed by cici.web</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 900, once: true });
+</script>
+
+</body>
+</html>

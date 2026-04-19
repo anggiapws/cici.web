@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Layered Studio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  body{
+    background:#f7f7f7;
+    color:#111827;
+    font-family: ui-sans-serif;
+  }
+
+  html{
+    scroll-behavior:smooth;
+  }
+
+  /* NAV */
+  .nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:16px 24px;
+    backdrop-filter: blur(14px);
+    background: rgba(255,255,255,0.75);
+    border-bottom:1px solid rgba(0,0,0,0.05);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:50;
+  }
+
+  .nav-links{
+    display:flex;
+    gap:20px;
+  }
+
+  .nav a{
+    font-size:14px;
+    color:#6b7280;
+    text-decoration:none;
+  }
+
+  /* MOBILE MENU */
+  .menu{
+    display:none;
+    font-size:22px;
+    cursor:pointer;
+  }
+
+  @media (max-width:768px){
+    .nav-links{
+      display:none;
+      position:absolute;
+      top:60px;
+      left:0;
+      width:100%;
+      flex-direction:column;
+      background:white;
+      padding:16px;
+      border-top:1px solid #eee;
+    }
+
+    .nav-links.active{
+      display:flex;
+    }
+
+    .menu{
+      display:block;
+    }
+  }
+
+  /* SECTION */
+  .section{
+    min-height:100vh;
+    padding:120px 24px;
+    display:flex;
+    align-items:center;
+  }
+
+  @media (min-width:768px){
+    .section{
+      padding:140px 70px;
+    }
+  }
+
+  /* TEXT */
+  .title{
+    font-size:clamp(36px,6vw,70px);
+    font-weight:600;
+    line-height:1.1;
+    letter-spacing:-2px;
+  }
+
+  .muted{
+    color:#6b7280;
+  }
+
+  .btn{
+    background:#111827;
+    color:white;
+    padding:12px 24px;
+    border-radius:999px;
+    display:inline-block;
+    font-size:14px;
+  }
+
+  /* IMAGE */
+  img{
+    width:100%;
+    height:auto;
+    display:block;
+  }
+
+  /* LAYER */
+  .layer{
+    position:relative;
+  }
+
+  .layer img{
+    border-radius:24px;
+    box-shadow:0 30px 80px rgba(0,0,0,0.12);
+  }
+
+  .float-box{
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    background:white;
+    padding:10px 14px;
+    border-radius:12px;
+    font-size:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  /* FADE */
+  .fade{
+    opacity:0;
+    transform: translateY(25px);
+    transition: 0.9s ease;
+  }
+
+  .fade.show{
+    opacity:1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="font-semibold">Layer Studio</div>
+
+  <div class="menu" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links">
+    <a href="#hero">Home</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero" class="section">
+
+  <div class="grid md:grid-cols-2 gap-10 w-full items-center">
+
+    <div class="fade">
+      <h1 class="title mb-6">
+        Design<br/>That Breathes
+      </h1>
+
+      <p class="muted mb-6 max-w-md">
+        Visual storytelling with depth and emotion.
+      </p>
+
+      <a class="btn" href="#">Start Project</a>
+    </div>
+
+    <div class="fade layer mt-8 md:mt-0">
+      <img src="https://picsum.photos/800/900" />
+      <div class="float-box">✨ Premium Studio</div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- STORY -->
+<section id="work" class="section">
+
+  <div class="grid md:grid-cols-3 gap-8 w-full">
+
+    <div class="fade md:col-span-2">
+      <img src="https://picsum.photos/1000/600" class="rounded-3xl"/>
+    </div>
+
+    <div class="fade">
+      <h2 class="text-3xl md:text-4xl font-semibold mb-4">
+        We Don’t Design.<br/>We Craft Feelings.
+      </h2>
+
+      <p class="muted">
+        Emotional digital experience with minimal structure.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- BREAK -->
+<section class="section text-center">
+
+  <div class="fade w-full">
+
+    <h2 class="text-3xl md:text-5xl font-semibold mb-4">
+      Minimal. Silent. Powerful.
+    </h2>
+
+    <p class="muted max-w-xl mx-auto">
+      Less structure, more feeling.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- WORK -->
+<section class="section">
+
+  <div class="grid md:grid-cols-3 gap-8 w-full">
+
+    <div class="fade md:col-span-2">
+      <img src="https://picsum.photos/900/700" class="rounded-3xl"/>
+    </div>
+
+    <div class="fade space-y-4">
+
+      <div class="p-4 bg-white rounded-2xl shadow">
+        Branding
+      </div>
+
+      <div class="p-4 bg-white rounded-2xl shadow">
+        UI/UX
+      </div>
+
+      <div class="p-4 bg-white rounded-2xl shadow">
+        Development
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section id="contact" class="section text-center">
+
+  <div class="fade">
+
+    <h2 class="text-3xl md:text-6xl font-semibold mb-4">
+      Let’s Build Something Rare
+    </h2>
+
+    <p class="muted mb-6">
+      High-end digital experience studio.
+    </p>
+
+    <a class="btn" href="#">
+      Contact Now
+    </a>
+
+  </div>
+
+</section>
+
+<footer class="text-center py-8 md:py-10 text-gray-500 text-sm">
+  <p>&copy; 2026 Designed by cici.web</p>
+</footer>
+
+<script>
+const items = document.querySelectorAll(".fade");
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add("show");
+    }
+  });
+},{threshold:0.15});
+
+items.forEach(el=>observer.observe(el));
+
+function toggleMenu(){
+  document.querySelector(".nav-links").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
